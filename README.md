@@ -28,7 +28,7 @@ Alle Angaben sind ohne Gewähr
 * [Akustische Signale](akustische-signale)<br>
 * [Systeme](systeme)<br>
 * [Nicht kategorisiert](nicht-kategorisiert)<br>
-* [10. Neue Fragen](neue-fragen)<br>
+* [Neue Fragen](neue-fragen)<br>
 
 # Definitionen
 Signal:
@@ -519,7 +519,7 @@ Was ist eine Schwebung?
 
 >Interferenz zweier ähnlicher Frequenzen ->Amplitude scheint sich periodisch zu ändern
 
-# 10. Neue Fragen
+# Neue Fragen
 
 Wie beschreibt man mathematisch die Abtastung eines Signals g(t) zum Zeitpunkt t1?
 
