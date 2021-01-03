@@ -2,36 +2,49 @@ Fragenkatalog SSS
 
 Alle Angaben sind ohne Gewähr
 
-* [1. Python](#1-python)<br>
-* [2. Messungen, Sensoren](#2-messungen-sensoren)<br>
-    * [2.1. Messinstrumente](#21-messinstrumente)<br>
-      * [2.1.1. Drehspulinstrument](#211-drehspulinstrument)<br>
-      * [2.1.2. Oszilloskop](#212-oszilloskop)<br>
-  * [2.2. Messgrößen](#22-messgrößen)<br>
-  * [2.3. Lineare Regression](#23-lineare-regression)<br>
-* [3. Signale](#3-signale)<br>
-* [4. Fourier, Spektrum, Phase, ...](#4-fourier-spektrum-phase-)<br>
-  * [4.1. Fouriertransformation](#41-fouriertransformation)<br>
-  * [4.2. Symmetrien](#42-symmetrien)<br>
-  * [4.3. komplexe Fourierreihe, komplexe Zahlen](#43-komplexe-fourierreihe-komplexe-zahlen)<br>
-  * [4.4. harmonische Fourierreihe](#44-harmonische-fourierreihe)<br>
-  * [4.5. Frequenz](#45-frequenz)<br>
-  * [4.6. Spektrum, Frequenzspektrum](#46-spektrum-frequenzspektrum)<br>
-  * [4.7. Phase, Phasengang, Phasenspektrum](#47-phase-phasengang-phasenspektrum)<br>
-  * [4.8. Amplitude, Amplitudengang, Amplitudenspektrum](#48-amplitude-amplitudengang-amplitudenspektrum)<br>
-  * [4.9. Dirac](#49-dirac)<br>
-  * [4.10. Frequenz-Zeit-Unschärferelation](#410-frequenz-zeit-unschärferelation)<br>
-* [5. Filter](#5-filter)<br>
-  * [5.1. Faltung](#51-faltung)<br>
-* [6. Bildsignale](#6-bildsignale)<br>
-* [7. Akustische Signale](#7-akustische-signale)<br>
-* [8. Systeme](#8-systeme)<br>
-* [9. Nicht kategorisiert](#9-nicht-kategorisiert)<br>
-* [10. Neue Fragen](#10-neue-fragen)<br>
+* [Definitionen](definitionen)<br>
+* [Python](python)<br>
+* [Messungen, Sensoren](messungen-sensoren)<br>
+    * [Messinstrumente](messinstrumente)<br>
+      * [Drehspulinstrument](drehspulinstrument)<br>
+      * [Oszilloskop](oszilloskop)<br>
+  * [Messgrößen](messgrößen)<br>
+  * [Lineare Regression](lineare-regression)<br>
+* [Signale](signale)<br>
+* [Fourier, Spektrum, Phase, ...](fourier-spektrum-phase-)<br>
+  * [Fouriertransformation](fouriertransformation)<br>
+  * [Symmetrien](symmetrien)<br>
+  * [komplexe Fourierreihe, komplexe Zahlen](komplexe-fourierreihe-komplexe-zahlen)<br>
+  * [harmonische Fourierreihe](harmonische-fourierreihe)<br>
+  * [Frequenz](frequenz)<br>
+  * [Spektrum, Frequenzspektrum](spektrum-frequenzspektrum)<br>
+  * [Phase, Phasengang, Phasenspektrum](phase-phasengang-phasenspektrum)<br>
+  * [Amplitude, Amplitudengang, Amplitudenspektrum](amplitude-amplitudengang-amplitudenspektrum)<br>
+  * [Dirac](dirac)<br>
+  * [Frequenz-Zeit-Unschärferelation](frequenz-zeit-unschärferelation)<br>
+* [Filter](filter)<br>
+  * [Faltung](faltung)<br>
+* [Bildsignale](bildsignale)<br>
+* [Akustische Signale](akustische-signale)<br>
+* [Systeme](systeme)<br>
+* [Nicht kategorisiert](nicht-kategorisiert)<br>
+* [10. Neue Fragen](neue-fragen)<br>
 
+# Definitionen
+Signal:
+>Schwingung/Wellen<br>
+>Alle Schwingungen sind aus Sinus-Schwingungen verschiedener Frequenz und Amplitude zusammengesetzt
 
+Frequenzgang:
+>Zusammenhang zwischen Ein- und Ausgangssignal
 
-# 1. Python
+Phase/Phasenwinkel:
+>Maß für zeitliche Verschiebung der Schwingung gegenüber einer anderen Sinus-Schwingung oder Bezugszeitpunkt (t = 0s)
+
+Amplitude:
+>Betrag des Maximalwertes einer Sinus-Schwingung. Ein Maß für Lautstärke oder die in der Sinus-Schwingung enthaltene Energie
+
+# Python
 
 Sie haben in Python eine 5 x 5 - Matrix a angelegt. Wie greifen Sie auf das zweite Element der dritten Zeile zu?<br>
 
@@ -46,7 +59,7 @@ import numpy as np
 np.array([[1, 1], [2, 2]])
 ```
 
-# 2. Messungen, Sensoren
+# Messungen, Sensoren
 
 Um was für eine Art von Normal handelt es sich bei dem Prototyp des Urkilogramms in Paris?
 
@@ -56,7 +69,7 @@ Was ist ein frequenzanaloges Ausgangssignal bei einem Sensor?
 
 >Die Intensität der Eingangsgröße ist durch die Frequenz des Outputs dargestellt. (?)
 
-## 2.1. Messinstrumente
+## Messinstrumente
 
 Was ist der Unterschied zwischen einem Sensor und einem Messgerät?
 
@@ -64,7 +77,7 @@ Was ist der Unterschied zwischen einem Sensor und einem Messgerät?
 
 Ein Messinstrument hat einen Anzeigefehler von 1% und einen Skalenendwert von 5 A. Im Moment zeigt das Instrument einen Strom von 2 A an. In welchem Bereich liegt der wahre Wert des Stroms?
 
->5 * 0.01 = 0.05
+>5 * 0.01 = 0.05<br>
 >2 +- 0.05 A
 
 Auf der Anzeige Ihres analogen Messinstrumentes steht "KL 1.5". Was bedeutet das?
@@ -89,7 +102,7 @@ Durch was entsteht der Anzeigefehler eines Messinstrumentes?
 
 >Durch Schwankungen in der Temperatur und der Gebrauchslage.
 
-### 2.1.1. Drehspulinstrument
+### Drehspulinstrument
 
 Welche elektrische Größe misst ein Drehspul-Messwerk?
 
@@ -115,7 +128,7 @@ Warum hat ein Drehspulinstrument eine Spiralfeder?
 
 >Damit auf den Zeiger eine Rückstellkraft gegen die auslenkende magnetische Kraft erzeugt wird und sich so ein Gleichgewicht einstellen kann.
 
-### 2.1.2. Oszilloskop
+### Oszilloskop
 
 Zu was benützt man ein Oszilloskop?
 
@@ -145,7 +158,7 @@ Wie schafft es das Oszilloskop, den Elektronenstrahl wiederholt von links nach r
 
 >Auf den Kondensator zur Horizontalablenkung wird eine Sägezahnspannung gelegt
 
-## 2.2. Messgrößen
+## Messgrößen
 
 Eine indirekte Messgröße A berechnet sich als Differenz zweier direkt gemessener Eingangsgrößen B und C mit absolutem Messfehler ΔB bzw. ΔC, d.h. `A = B - C`. Wie groß schätzen Sie den absoluten Messfehler ΔA?
 
@@ -153,7 +166,7 @@ Eine indirekte Messgröße A berechnet sich als Differenz zweier direkt gemessen
 
 Sie haben eine indirekt gemessene Größe A, die von mehreren Eingangsgrößen B, C, D, ... abhängt, die alle den gleichen Messfehler haben. Welche der Eingangsgrößen hat den größten Einfluss auf den Messfehler von A?
 
->Die mit der größten Gewichtung
+>Die mit der größten Gewichtung<br>
 >Diejenige Eingangsgröße, deren partielle Ableitung von A am größten ist. (?)
 
 Sie haben 20 Einzelmessungen mit einer Standardabweichung des Mittelwertes von s. Wie groß ist das Vertrauensintervall, in das der wahre Wert der Messgröße mit einer Wahrscheinlichkeit von 95,5 % fällt?
@@ -164,7 +177,7 @@ Wie schätzt man den wahren Wert einer Messgröße, wenn mehrere fehlerbehaftete
 
 >arithmetisches Mittel aus den Einzelmesswerten
 
-## 2.3. Lineare Regression
+## Lineare Regression
 
 Was leistet die lineare Regression?
 
@@ -175,7 +188,7 @@ Kann man die lineare Regression auch bei Kennlinien anwenden, die einem Gesetz d
 
 >Ja, und zwar in dem man die Eingangsgröße logarithmiert und die Exponentialfunktion als Ausgangsgröße nimmt
 
-# 3. Signale
+# Signale
 
 Was ist ein gerades Signal?
 
@@ -189,19 +202,19 @@ Welche Bedingungen muss ein aperiodisches Signal NICHT erfüllen, damit sein Fou
 
 >Es darf innerhalb einer Periode nur unendlich viele Nullstellen haben. (?)
 
-# 4. Fourier, Spektrum, Phase, ...
+# Fourier, Spektrum, Phase, ...
 
 Welche Signale lassen sich als Fourierreihe darstellen?
 
 >Alle physikalisch erzeugbare Signale
 
-## 4.1. Fouriertransformation
+## Fouriertransformation
 
 Wie funktioniert die Kurzzeit-Fouriertransformation?
 
->1. überlappende Fenster erstellen
->2. Fensterfunktion anwenden
->3. Fenster fourier analysieren 11.10
+>1. überlappende Fenster erstellen<br>
+>2. Fensterfunktion anwenden<br>
+>3. Fenster fourier analysieren 11.10<br>
 
 Was muss man bei der Wahl des Fensters bei der Kurzzeit-Fouriertransformation beachten?
 
@@ -218,13 +231,13 @@ Was ist das Gibbs-Phänomen?
 
 >Über/Unterschwinger der Fouriertransformierten bei Sprüngen im Ausgangssignal
 
-## 4.2. Symmetrien
+## Symmetrien
 
 Welche Symmetrien hat die zweiseitige Fourierreihe?
 
 >Y-Achsensymmetrie
 
-## 4.3. komplexe Fourierreihe, komplexe Zahlen
+## komplexe Fourierreihe, komplexe Zahlen
 
 Was ist der Unterschied zwischen dem Skalarprodukt in einem zweidimensionalen Vektorraum und der Multiplikation zweier komplexer Zahlen?
 
@@ -242,7 +255,7 @@ Was haben komplexe Zahlen mit Sinusschwingungen zu tun?
 
 >Mithilfe der komplexen Fouriertransformation lassen sich Sinusschwingungen in der kartesischen Darstellung der komplexen Zahlen darstellen
 
-## 4.4. harmonische Fourierreihe
+## harmonische Fourierreihe
 
 Aus welchen Summentermen besteht die harmonische Form der Fourierreihe?
 
@@ -260,13 +273,13 @@ Wie viele Terme hat die zweiseitige trigonometrische Fourierreihe von `1 + sin(t
 
 >3
 
-## 4.5. Frequenz
+## Frequenz
 
 Wie berechnet sich die Frequenz einer Sinusschwingung, das aus der Summe einer Sinus- und einer Cosinusfunktion gleicher Frequenz entsteht?
 
 >Frequenz ändert sich nicht?
 
-## 4.6. Spektrum, Frequenzspektrum
+## Spektrum, Frequenzspektrum
 
 Wie unterscheidet sich das Spektrum periodischer Rechteckimpulse von einer Gauß-Impulsfolge und warum?
 
@@ -343,7 +356,7 @@ Welche der folgenden Signale belegt das schmalste Frequenzband?
 
 >möglichst breite Rechteckfunktion.
 
-## 4.7. Phase, Phasengang, Phasenspektrum
+## Phase, Phasengang, Phasenspektrum
 
 Was ist die Phase einer Sinusschwingung?
 
@@ -353,7 +366,7 @@ Wie verändert der Phasengang eines linearen Systems die Phase des Eingangssigna
 
 >Phasengang: gibt für jede Frequenz an, wie stark die Phase der Sinusschwingungen verschoben wird. Der Phasengang ist meistens negativ, d.h. der Ausgang folgt verzögert dem Eingang. 12.24
 
-## 4.8. Amplitude, Amplitudengang, Amplitudenspektrum
+## Amplitude, Amplitudengang, Amplitudenspektrum
 
 Was ist die Regellage?
 
@@ -363,7 +376,7 @@ Wie sieht der Amplitudengang eines Differenzierers aus?
 
 >Jede Sinussignal wird proportional zu seiner Frequenz verstärkt, d.h. der Amplitudengang ist eine Gerade mit Steigung 1. 12.26
 
-## 4.9. Dirac
+## Dirac
 
 Was ist eine δ-Impulsfolge?
 
@@ -382,7 +395,7 @@ Wie sieht die Fouriertransformierte des mit 2 skalierten Einheitsimpulses aus?
 
 >konstant mit allen frequenzen (da zeitauslösung maximal)
 
-## 4.10. Frequenz-Zeit-Unschärferelation
+## Frequenz-Zeit-Unschärferelation
 
 Wie berechnet man die Frequenzunschärfe eines Signals?
 
@@ -398,9 +411,9 @@ Was besagt die Frequenz-Zeit-Unschärferelation?
 
 Was bedeutet die Komplementarität von Frequenz und Zeit?
 
->Je eingeschränkter das Frequenzband eines Signals ist, desto größer muss zwangsläufig die Zeitdauer des Signals sein.
->Eine zeitliche Eingrenzung der Signaldauer ∆t bedeutet eine Ausweitung des Frequenzbandes ∆f.
->Umgekehrt gilt: Je eingeschränkter das Frequenzband eines Signals ist, desto größer muss zwangsläufig die Zeitdauer des Signals sein.
+>Je eingeschränkter das Frequenzband eines Signals ist, desto größer muss zwangsläufig die Zeitdauer des Signals sein.<br>
+>Eine zeitliche Eingrenzung der Signaldauer ∆t bedeutet eine Ausweitung des Frequenzbandes ∆f.<br>
+>Umgekehrt gilt: Je eingeschränkter das Frequenzband eines Signals ist, desto größer muss zwangsläufig die Zeitdauer des Signals sein.<br>
 
 Bei welchem Signal ist das Produkt aus Zeit- und Frequenzunschärfe genau gleich 1?
 
@@ -414,7 +427,7 @@ Sie haben zwei fastperiodische Signale: 500ms und 1s. Wie unterscheiden sich die
 
 >Die Linien des länger andauernden Signals sind schärfer.
 
-# 5. Filter
+# Filter
 
 Was ist Filterung?
 
@@ -424,12 +437,12 @@ Welche Eigenschaften haben ideale frequenzselektive Filter im Zeitbereich?
 
 >Ideale Filter sind extrem scharf im Frequenzbereich lokalisiert.
 >Nach der Unschärferelation führt dies zu einer weiträumigen ”Verschmierung” im Zeitbereich. 14.17
->- Nichtkausal
->- Unendlich große Impulsantwort (Sinc-Funktion)
->- Überschwingen
->- Oszillierendes Einschwingen 14.18
+>- Nichtkausal<br>
+>- Unendlich große Impulsantwort (Sinc-Funktion)<br>
+>- Überschwingen<br>
+>- Oszillierendes Einschwingen 14.18<br>
 
-## 5.1. Faltung
+## Faltung
 
 Wie funktioniert die Faltung, um das Ausgangssignal eines Systems zur Zeit t zu berechnen?
 
@@ -444,7 +457,7 @@ Was ist das Faltungsintegral?
 
 >Systemantwort ermittelt durch Integral über f(zeitverschoben t) * impulsantwort h(t - zeitverschoben t)
 
-# 6. Bildsignale
+# Bildsignale
 
 Wofür braucht man ein Dunkelbild?
 
@@ -458,7 +471,7 @@ Wie findet man die "dead pixels" einer Kamera?
 
 >Dead pixels tauchen im Weißbild als dunkle Pixel auf.
 
-# 7. Akustische Signale
+# Akustische Signale
 
 Wie kann man am Besten die wechselnde Tonhöhe in der Aufnahme eines Solo-Musikstückes
 bestimmen?
@@ -487,16 +500,16 @@ Wie funktioniert ein Nächste-Nachbar-Klassifikator?
 
 Wie wird die momentane Frequenz eines akustischen Eingangssignals in der Basilarmembran des Innenohrs codiert?
 
->Position der Membran bestimmt Tonhöhe, da die Basilarmembran konisch verläuft.
+>Position der Membran bestimmt Tonhöhe, da die Basilarmembran konisch verläuft.<br>
 >Dünne stellen werden von hohen frequenzen angeregt, Breite stellen von hohen. (kap. 11.21)
 
-# 8. Systeme
+# Systeme
 
 Ein System liefert für eine Sinusschwingung als Eingangssignal eine doppelt so große
 Sinusschwingung gleicher Frequenz als Ausgangssignal, das um 10 ms verzögert ist. Um
 welche Art von System handelt es sich?
 
-# 9. Nicht kategorisiert
+# Nicht kategorisiert
 
 Wie unterscheiden sich Korrelation und Kovarianz als Ähnlichkeitsmaß?
 
