@@ -1,5 +1,7 @@
 Fragenkatalog SSS
 
+Alle Angaben sind ohne Gewähr
+
 * [1. Python](#1-python)<br>
 * [2. Messungen, Sensoren](#2-messungen-sensoren)<br>
     * [2.1. Messinstrumente](#21-messinstrumente)<br>
