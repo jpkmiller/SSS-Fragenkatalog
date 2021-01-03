@@ -2,33 +2,33 @@ Fragenkatalog SSS
 
 Alle Angaben sind ohne Gewähr
 
-* [Definitionen](definitionen)<br>
-* [Python](python)<br>
-* [Messungen, Sensoren](messungen-sensoren)<br>
-    * [Messinstrumente](messinstrumente)<br>
-      * [Drehspulinstrument](drehspulinstrument)<br>
-      * [Oszilloskop](oszilloskop)<br>
-  * [Messgrößen](messgrößen)<br>
-  * [Lineare Regression](lineare-regression)<br>
-* [Signale](signale)<br>
-* [Fourier, Spektrum, Phase, ...](fourier-spektrum-phase-)<br>
-  * [Fouriertransformation](fouriertransformation)<br>
-  * [Symmetrien](symmetrien)<br>
-  * [komplexe Fourierreihe, komplexe Zahlen](komplexe-fourierreihe-komplexe-zahlen)<br>
-  * [harmonische Fourierreihe](harmonische-fourierreihe)<br>
-  * [Frequenz](frequenz)<br>
-  * [Spektrum, Frequenzspektrum](spektrum-frequenzspektrum)<br>
-  * [Phase, Phasengang, Phasenspektrum](phase-phasengang-phasenspektrum)<br>
-  * [Amplitude, Amplitudengang, Amplitudenspektrum](amplitude-amplitudengang-amplitudenspektrum)<br>
-  * [Dirac](dirac)<br>
-  * [Frequenz-Zeit-Unschärferelation](frequenz-zeit-unschärferelation)<br>
-* [Filter](filter)<br>
-  * [Faltung](faltung)<br>
-* [Bildsignale](bildsignale)<br>
-* [Akustische Signale](akustische-signale)<br>
-* [Systeme](systeme)<br>
-* [Nicht kategorisiert](nicht-kategorisiert)<br>
-* [Neue Fragen](neue-fragen)<br>
+* [Definitionen](##definitionen)<br>
+* [Python](##python)<br>
+* [Messungen, Sensoren](##messungen-sensoren)<br>
+    * [Messinstrumente](##messinstrumente)<br>
+      * [Drehspulinstrument](##drehspulinstrument)<br>
+      * [Oszilloskop](##oszilloskop)<br>
+  * [Messgrößen](##messgrößen)<br>
+  * [Lineare Regression](##lineare-regression)<br>
+* [Signale](##signale)<br>
+* [Fourier, Spektrum, Phase, ...](##fourier-spektrum-phase-)<br>
+  * [Fouriertransformation](##fouriertransformation)<br>
+  * [Symmetrien](##symmetrien)<br>
+  * [komplexe Fourierreihe, komplexe Zahlen](##komplexe-fourierreihe-komplexe-zahlen)<br>
+  * [harmonische Fourierreihe](##harmonische-fourierreihe)<br>
+  * [Frequenz](##frequenz)<br>
+  * [Spektrum, Frequenzspektrum](##spektrum-frequenzspektrum)<br>
+  * [Phase, Phasengang, Phasenspektrum](##phase-phasengang-phasenspektrum)<br>
+  * [Amplitude, Amplitudengang, Amplitudenspektrum](##amplitude-amplitudengang-amplitudenspektrum)<br>
+  * [Dirac](##dirac)<br>
+  * [Frequenz-Zeit-Unschärferelation](##frequenz-zeit-unschärferelation)<br>
+* [Filter](##filter)<br>
+  * [Faltung](##faltung)<br>
+* [Bildsignale](##bildsignale)<br>
+* [Akustische Signale](##akustische-signale)<br>
+* [Systeme](##systeme)<br>
+* [Nicht kategorisiert](##nicht-kategorisiert)<br>
+* [Neue Fragen](##neue-fragen)<br>
 
 # Definitionen
 Signal:
