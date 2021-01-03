@@ -1,31 +1,31 @@
 Fragenkatalog SSS
 
-[1. Python](#1-python)<br>
-[2. Messungen, Sensoren](#2-messungen-sensoren)<br>
-[2.1. Messinstrumente](#21-messinstrumente)<br>
-[2.1.1. Drehspulinstrument](#211-drehspulinstrument)<br>
-[2.1.2. Oszilloskop](#212-oszilloskop)<br>
-[2.2. Messgrößen](#22-messgrößen)<br>
-[2.3. Lineare Regression](#23-lineare-regression)<br>
-[3. Signale](#3-signale)<br>
-[4. Fourier, Spektrum, Phase, ...](#4-fourrier-spektrum-phase-)<br>
-[4.1. Fouriertransformation](#41-fouriertransformation)<br>
-[4.2. Symmetrien](#42-symmetrien)<br>
-[4.3. komplexe Fourierreihe, komplexe Zahlen](#43-komplexe-fourierreihe-komplexe-zahlen)<br>
-[4.4. harmonische Fourierreihe](#44-harmonische-fourierreihe)<br>
-[4.5. Frequenz](#45-frequenz)<br>
-[4.6. Spektrum, Frequenzspektrum](#46-spektrum-frequenzspektrum)<br>
-[4.7. Phase, Phasengang, Phasenspektrum](#47-phase-phasengang-phasenspektrum)<br>
-[4.8. Amplitude, Amplitudengang, Amplitudenspektrum](#48-amplitude-amplitudengang-amplitudenspektrum)<br>
-[4.9. Dirac](#49-dirac)<br>
-[4.10. Frequenz-Zeit-Unschärferelation](#410-frequenz-zeit-unschärferelation)<br>
-[5. Filter](#5-filter)<br>
-[5.1. Faltung](#51-faltung)<br>
-[6. Bildsignale](#6-bildsignale)<br>
-[7. Akustische Signale](#7-akustische-signale)<br>
-[8. Systeme](#8-systeme)<br>
-[9. Nicht kategorisiert](#81-nicht-kategorisiert)<br>
-[10. Neue Fragen](#9-neue-fragen)<br>
+* [1. Python](#1-python)<br>
+* [2. Messungen, Sensoren](#2-messungen-sensoren)<br>
+    * [2.1. Messinstrumente](#21-messinstrumente)<br>
+      * [2.1.1. Drehspulinstrument](#211-drehspulinstrument)<br>
+      * [2.1.2. Oszilloskop](#212-oszilloskop)<br>
+  * [2.2. Messgrößen](#22-messgrößen)<br>
+  * [2.3. Lineare Regression](#23-lineare-regression)<br>
+* [3. Signale](#3-signale)<br>
+* [4. Fourier, Spektrum, Phase, ...](#4-fourier-spektrum-phase-)<br>
+  * [4.1. Fouriertransformation](#41-fouriertransformation)<br>
+  * [4.2. Symmetrien](#42-symmetrien)<br>
+  * [4.3. komplexe Fourierreihe, komplexe Zahlen](#43-komplexe-fourierreihe-komplexe-zahlen)<br>
+  * [4.4. harmonische Fourierreihe](#44-harmonische-fourierreihe)<br>
+  * [4.5. Frequenz](#45-frequenz)<br>
+  * [4.6. Spektrum, Frequenzspektrum](#46-spektrum-frequenzspektrum)<br>
+  * [4.7. Phase, Phasengang, Phasenspektrum](#47-phase-phasengang-phasenspektrum)<br>
+  * [4.8. Amplitude, Amplitudengang, Amplitudenspektrum](#48-amplitude-amplitudengang-amplitudenspektrum)<br>
+  * [4.9. Dirac](#49-dirac)<br>
+  * [4.10. Frequenz-Zeit-Unschärferelation](#410-frequenz-zeit-unschärferelation)<br>
+* [5. Filter](#5-filter)<br>
+  * [5.1. Faltung](#51-faltung)<br>
+* [6. Bildsignale](#6-bildsignale)<br>
+* [7. Akustische Signale](#7-akustische-signale)<br>
+* [8. Systeme](#8-systeme)<br>
+* [9. Nicht kategorisiert](#9-nicht-kategorisiert)<br>
+* [10. Neue Fragen](#10-neue-fragen)<br>
 
 
 # 1. Python
