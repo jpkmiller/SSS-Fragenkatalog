@@ -30,6 +30,7 @@ Alle Angaben sind ohne Gewähr
 * [10. Neue Fragen](#10-neue-fragen)<br>
 
 
+
 # 1. Python
 
 Sie haben in Python eine 5 x 5 - Matrix a angelegt. Wie greifen Sie auf das zweite Element der dritten Zeile zu?<br>
@@ -546,3 +547,8 @@ Wie sieht ein idealer zeitdiskreter Tiefpass im Spektralraum aus?
 Ein zeitdiskreter Filter besteht aus der Differenz des momentanen Inputwertes und des Inputwertes des vergangenen Zeitschritts. Um was für eine Art von Filter handelt es sich?
 
 Ist eine zeitdiskrete Sinusschwingung immer periodisch?
+
+
+# Danke
+
+Danke an Alex und Ismail
