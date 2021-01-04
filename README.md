@@ -14,8 +14,9 @@ Alle Angaben sind ohne Gewähr
 * [Fourier, Spektrum, Phase, ...](#fourier-spektrum-phase-)<br>
   * [Fouriertransformation](#fouriertransformation)<br>
   * [Symmetrien](#symmetrien)<br>
-  * [komplexe Fourierreihe, komplexe Zahlen](#komplexe-fourierreihe-komplexe-zahlen)<br>
   * [harmonische Fourierreihe](#harmonische-fourierreihe)<br>
+  * [trigonometrische Fourierreihe](#trigonometrische-fourierreihe)<br>
+  * [komplexe Fourierreihe, komplexe Zahlen](#komplexe-fourierreihe-komplexe-zahlen)<br>
   * [Frequenz](#frequenz)<br>
   * [Spektrum, Frequenzspektrum](#spektrum-frequenzspektrum)<br>
   * [Phase, Phasengang, Phasenspektrum](#phase-phasengang-phasenspektrum)<br>
@@ -48,7 +49,7 @@ Fouriertransformation:
 >Verfahren, das Frequenzspektrum des Signals aus dem zeitlichen Verlauf zu berechnen - Analyse
 
 Inverse Fouriertransformation:
-> verfahren, den Zeitverlauf des Signals aus dem Spektrum zu berechnen - Synthese
+> Verfahren, den Zeitverlauf des Signals aus dem Spektrum zu berechnen - Synthese
 
 # Python
 
@@ -243,23 +244,10 @@ Welche Symmetrien hat die zweiseitige Fourierreihe?
 
 >Y-Achsensymmetrie
 
-## komplexe Fourierreihe, komplexe Zahlen
+Wie unterscheiden sich symmetrische von asymmetrischen Funktionen?
 
-Was ist der Unterschied zwischen dem Skalarprodukt in einem zweidimensionalen Vektorraum und der Multiplikation zweier komplexer Zahlen?
-
->Beim Skalarprodukt von zweidimensionalen Vektoren kommt ein Zahl hervor. Bei der Multiplikation zweier komplexer Zahlen kommt wieder eine komplexe Zahl raus.
-
-Was ist der Unterschied zwischen der Menge der zweidimensionalen Vektoren und den komplexen Zahlen?
-
->Es gibt keinen Unterschied.
-
-Aus welchen Grundsignalen besteht die komplexe Fourierreihe?
-
->Realteil beziehungsweise Cos-Anteil und Imaginärteil beziehungsweise Sin-Anteil
-
-Was haben komplexe Zahlen mit Sinusschwingungen zu tun?
-
->Mithilfe der komplexen Fouriertransformation lassen sich Sinusschwingungen in der kartesischen Darstellung der komplexen Zahlen darstellen
+>Symmetrisch: f(-t) = f(t)<br>
+>Asymmetrisch: f(-t) = -f(t)<br>
 
 ## harmonische Fourierreihe
 
@@ -267,23 +255,43 @@ Aus welchen Summentermen besteht die harmonische Form der Fourierreihe?
 
 >A * sin(wt) + B * cos(wt)
 
+## trigonometrische Fourierreihe
+
 Welchen Vorteil hat die trigonometrische Form der Fourierreihe gegenüber der harmonischen Form?
 
 >Das Wegfallen der Phase und die unbekannten Fourierkoeffizienten können berechnet werden
 
 Wie sehen die Fourierkoeffizienten der zweiseitigen trigonometrischen Fourierreihe für `x(t) = a * cos(2 * omega * t)` aus?
 
->
+> 
 
 Wie viele Terme hat die zweiseitige trigonometrische Fourierreihe von `1 + sin(t) + 3 cos(2t)`?
 
 >3
 
+## komplexe Fourierreihe, komplexe Zahlen
+
+Was ist der Unterschied zwischen dem Skalarprodukt in einem zweidimensionalen Vektorraum und der Multiplikation zweier komplexer Zahlen?
+
+>Beim Skalarprodukt von zweidimensionalen Vektoren kommt eine Zahl hervor. Bei der Multiplikation zweier komplexer Zahlen kommt wieder eine komplexe Zahl raus.
+
+Was ist der Unterschied zwischen der Menge der zweidimensionalen Vektoren und den komplexen Zahlen?
+
+>Es gibt keinen Unterschied.
+
+Aus welchen Grundsignalen besteht die komplexe Fourierreihe?
+
+>Realteil beziehungsweise Cos-Anteil und Imaginärteil beziehungsweise Sin-Anteil.
+
+Was haben komplexe Zahlen mit Sinusschwingungen zu tun?
+
+>Mithilfe der komplexen Fouriertransformation lassen sich Sinusschwingungen in der kartesischen Darstellung der komplexen Zahlen darstellen
+
 ## Frequenz
 
 Wie berechnet sich die Frequenz einer Sinusschwingung, das aus der Summe einer Sinus- und einer Cosinusfunktion gleicher Frequenz entsteht?
 
->Frequenz ändert sich nicht?
+>Frequenz ändert sich nicht (?)
 
 ## Spektrum, Frequenzspektrum
 
@@ -293,20 +301,20 @@ Wie unterscheidet sich das Spektrum periodischer Rechteckimpulse von einer Gauß
 
 Sie beobachten ein Spektrum aus mehreren Linien bei 100 Hz, 200 Hz, 270 Hz, 400 Hz und 800 Hz. Um was für einen Signaltyp handelt es sich?
 
->quasiperiodisches Signal
+>quasiperiodisches Signal.
 
 Wie sieht das Spektrum eines einzelnen Rechteckimpulses aus?
 
->stetige Funktion
+>stetige Funktion.
 
 Sie zerlegen ein relativ glattes, periodisches Signal in mehrere Abschnitte und bestimmen in jedem Abschnitt die lokale Fouriertransformation. Wie unterscheiden sich die lokalen Spektra vom Gesamtspektrum und warum?
 
->mehr hohe frequenzen, wegen den Sprüngen an den Fensterrändern
+>mehr hohe frequenzen, wegen den Sprüngen an den Fensterrändern.
 
 Bei dem Spektrum eines Signals ist der Realteil gerade und der Imaginärteil ungerade.
 Um was für einen Signaltyp handelt es sich?
 
->reelles Signal, ohne Symmetrie
+>reelles Signal, ohne Symmetrie.
 
 Wie unterscheiden sich die Spektren von schnell und langsam veränderlichen Signalen?
 
@@ -320,11 +328,11 @@ der die Periode immer weiter erhöht wird?
 Was ist der Unterschied zwischen der Fourierreihe und dem Spektrum eines periodischen
 Signals?
 
->Das Spektrum der kontinuierlichen Fouriertransformation lässt sich als Grenzfall des Linienspektrums der Fourierreihe für den Grenzübergang T ->unendl. einer unendlich großen Signal-Periodendauer darstellen.
+>Das Spektrum der kontinuierlichen Fouriertransformation lässt sich als Grenzfall des Linienspektrums der Fourierreihe für den Grenzübergang T -> unendl. einer unendlich großen Signal-Periodendauer darstellen.
 
 Wie wirkt ein lineares System auf das Spektrum eines Signals?
 
->Wird auf den Eingang (oder die Eingänge) eines Systems ein sinusförmiges Signal beliebiger Frequenz gegeben und erscheint am Ausgang lediglich ein sinusförmiges Signal genau dieser Frequenz, so ist der Prozess linear. 12.6 ->spektrum hat gleiche 1. harmonische? 12.6 ff
+>Wird auf den Eingang (oder die Eingänge) eines Systems ein sinusförmiges Signal beliebiger Frequenz gegeben und erscheint am Ausgang lediglich ein sinusförmiges Signal genau dieser Frequenz, so ist der Prozess linear. 12.6 ->spektrum hat gleiche 1. harmonische? (kap. 12.6 ff)
 
 Was passiert mit dem Spektrum eines Signals, wenn man es in zeitlicher Richtung verschiebt?
 
@@ -341,11 +349,11 @@ Was passiert mit dem Spektrum eines Signals, wenn man es mit einem konstanten Ph
 Wie muss man den Frequenzgang eines Filters im Spektralraum verändern, damit sich die
 Impulsantwort in der Zeitdomäne verschiebt?
 
->durch eine Multiplikation des Frequenzgangs mit einem Phasenfaktor e^(−iωa) erreicht man eine Verschiebung der Impulsantwort. 14.19
+>durch eine Multiplikation des Frequenzgangs mit einem Phasenfaktor e^(−iωa) erreicht man eine Verschiebung der Impulsantwort. (kap. 14.19)
 
 Wie wirkt die Differentiation auf das Spektrum eines Signals?
 
->Die Ableitung im Frequenzbereich ist besonders einfach: simple Multiplikation um den Faktor iω. 12.17
+>Die Ableitung im Frequenzbereich ist besonders einfach: simple Multiplikation um den Faktor iω. (kap. 12.17)
 
 Was ist ein Bode-Diagramm?
 
@@ -370,7 +378,7 @@ Was ist die Phase einer Sinusschwingung?
 
 Wie verändert der Phasengang eines linearen Systems die Phase des Eingangssignals?
 
->Phasengang: gibt für jede Frequenz an, wie stark die Phase der Sinusschwingungen verschoben wird. Der Phasengang ist meistens negativ, d.h. der Ausgang folgt verzögert dem Eingang. 12.24
+>Phasengang: gibt für jede Frequenz an, wie stark die Phase der Sinusschwingungen verschoben wird. Der Phasengang ist meistens negativ, d.h. der Ausgang folgt verzögert dem Eingang. (kap. 12.24)
 
 ## Amplitude, Amplitudengang, Amplitudenspektrum
 
@@ -380,7 +388,7 @@ Was ist die Regellage?
 
 Wie sieht der Amplitudengang eines Differenzierers aus?
 
->Jede Sinussignal wird proportional zu seiner Frequenz verstärkt, d.h. der Amplitudengang ist eine Gerade mit Steigung 1. 12.26
+>Jede Sinussignal wird proportional zu seiner Frequenz verstärkt, d.h. der Amplitudengang ist eine Gerade mit Steigung 1. (kap. 12.26)
 
 ## Dirac
 
@@ -399,7 +407,7 @@ Was ist die Ausblendeigenschaft des Dirac-Impulses?
 
 Wie sieht die Fouriertransformierte des mit 2 skalierten Einheitsimpulses aus?
 
->konstant mit allen frequenzen (da zeitauslösung maximal)
+>konstant mit allen frequenzen (da Zeitauflösung maximal)
 
 ## Frequenz-Zeit-Unschärferelation
 
@@ -437,12 +445,12 @@ Sie haben zwei fastperiodische Signale: 500ms und 1s. Wie unterscheiden sich die
 
 Was ist Filterung?
 
->Veränderung der relativen Amplituden einzelner Frequenzkomponenten in einem Signal 14.12
+>Veränderung der relativen Amplituden einzelner Frequenzkomponenten in einem Signal (kap. 4.12)
 
 Welche Eigenschaften haben ideale frequenzselektive Filter im Zeitbereich?
 
 >Ideale Filter sind extrem scharf im Frequenzbereich lokalisiert.
->Nach der Unschärferelation führt dies zu einer weiträumigen ”Verschmierung” im Zeitbereich. 14.17
+>Nach der Unschärferelation führt dies zu einer weiträumigen ”Verschmierung” im Zeitbereich. (kap. 14.17)
 >- Nichtkausal<br>
 >- Unendlich große Impulsantwort (Sinc-Funktion)<br>
 >- Überschwingen<br>
@@ -490,7 +498,7 @@ Wievielen Dezibel entspricht ein Verstärkungsfaktor von 100?
 
 Wie kann man einen Vokal in einem Sprachsignal erkennen?
 
->Vokale sind fastperiodische Signalabschnitte in Sprachsignalen. 11.7
+>Vokale sind fastperiodische Signalabschnitte in Sprachsignalen. (kap. 11.7)
 
 Was ist ein Phonem?
 
@@ -498,7 +506,7 @@ Was ist ein Phonem?
 
 Was sind Formanten?
 
->Diejenigen Frequenzbereiche, bei denen die relative Verstärkung (im Hohlraumresonator) am höchsten ist, bezeichnet man als Formanten. 11.18
+>Diejenigen Frequenzbereiche, bei denen die relative Verstärkung (im Hohlraumresonator) am höchsten ist, bezeichnet man als Formanten. (kap. 11.18)
 
 Wie funktioniert ein Nächste-Nachbar-Klassifikator?
 
@@ -519,7 +527,7 @@ welche Art von System handelt es sich?
 
 Wie unterscheiden sich Korrelation und Kovarianz als Ähnlichkeitsmaß?
 
->Kovarianz ist unabhängig vom Mittelwert 11.26 (Bei der Korrelation ist die "Ähnlichkeit" bei lauten signalen immer größer)
+>Kovarianz ist unabhängig vom Mittelwert (kap. 11.26) (Bei der Korrelation ist die "Ähnlichkeit" bei lauten signalen immer größer)
 
 Was ist eine Schwebung?
 
