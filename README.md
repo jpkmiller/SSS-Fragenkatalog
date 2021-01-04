@@ -44,6 +44,12 @@ Phase/Phasenwinkel:
 Amplitude:
 >Betrag des Maximalwertes einer Sinus-Schwingung. Ein Maß für Lautstärke oder die in der Sinus-Schwingung enthaltene Energie
 
+Fouriertransformation:
+>Verfahren, das Frequenzspektrum des Signals aus dem zeitlichen Verlauf zu berechnen - Analyse
+
+Inverse Fouriertransformation:
+> verfahren, den Zeitverlauf des Signals aus dem Spektrum zu berechnen - Synthese
+
 # Python
 
 Sie haben in Python eine 5 x 5 - Matrix a angelegt. Wie greifen Sie auf das zweite Element der dritten Zeile zu?<br>
