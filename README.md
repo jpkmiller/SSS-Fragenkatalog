@@ -221,12 +221,12 @@ Wie funktioniert die Kurzzeit-Fouriertransformation?
 
 >1. überlappende Fenster erstellen<br>
 >2. Fensterfunktion anwenden<br>
->3. Fenster fourier analysieren 11.10<br>
+>3. Fenster fourier analysieren (kap. 11.10)<br>
 
 Was muss man bei der Wahl des Fensters bei der Kurzzeit-Fouriertransformation beachten?
 
 >Fenster groß ->hohe Frequenzauflösung, niedrige Zeitauflösung (Sonogramm schmal, aber überlappend)
->Fenster klein ->hohe Zeitauflösung, niedrige Frequenzauflösung (Sonogramm breit, aber abgegrenzt) 11.10
+>Fenster klein ->hohe Zeitauflösung, niedrige Frequenzauflösung (Sonogramm breit, aber abgegrenzt) (kap. 11.10)
 
 Die Fouriertransformierte von f_1(t) sei F_1(ω), die Fouriertransformierte von f_2(t)
 sei F_2(ω). Wie sieht die Fouriertransformierte von f(t) = 3 f_1(t) - 0.7 f_2(t) aus, und
@@ -261,7 +261,7 @@ Welchen Vorteil hat die trigonometrische Form der Fourierreihe gegenüber der ha
 
 >Das Wegfallen der Phase und die unbekannten Fourierkoeffizienten können berechnet werden
 
-Wie sehen die Fourierkoeffizienten der zweiseitigen trigonometrischen Fourierreihe für `x(t) = a * cos(2 * omega * t)` aus?
+Wie sehen die Fourierkoeffizienten der zweiseitigen trigonometrischen Fourierreihe für `x(t) = a * cos(2 * ω * t)` aus?
 
 > 
 
@@ -289,7 +289,7 @@ Was haben komplexe Zahlen mit Sinusschwingungen zu tun?
 
 ## Frequenz
 
-Wie berechnet sich die Frequenz einer Sinusschwingung, das aus der Summe einer Sinus- und einer Cosinusfunktion gleicher Frequenz entsteht?
+Wie berechnet sich die Frequenz einer Sinusschwingung, das aus der Summe einer Sinus- und einer Kosinusfunktion gleicher Frequenz entsteht?
 
 >Frequenz ändert sich nicht (?)
 
@@ -332,7 +332,7 @@ Signals?
 
 Wie wirkt ein lineares System auf das Spektrum eines Signals?
 
->Wird auf den Eingang (oder die Eingänge) eines Systems ein sinusförmiges Signal beliebiger Frequenz gegeben und erscheint am Ausgang lediglich ein sinusförmiges Signal genau dieser Frequenz, so ist der Prozess linear. 12.6 ->spektrum hat gleiche 1. harmonische? (kap. 12.6 ff)
+>Wird auf den Eingang (oder die Eingänge) eines Systems ein sinusförmiges Signal beliebiger Frequenz gegeben und erscheint am Ausgang lediglich ein sinusförmiges Signal genau dieser Frequenz, so ist der Prozess linear. (kap. 12.6) ->spektrum hat gleiche 1. harmonische? (kap. 12.6 ff)
 
 Was passiert mit dem Spektrum eines Signals, wenn man es in zeitlicher Richtung verschiebt?
 
@@ -357,7 +357,7 @@ Wie wirkt die Differentiation auf das Spektrum eines Signals?
 
 Was ist ein Bode-Diagramm?
 
->Darstellung des Frequenzgangs anhand H(omega) in abhängigkeit der Frequenz (logarithmiert)
+>Darstellung des Frequenzgangs anhand H(ω) in abhängigkeit der Frequenz (logarithmiert)
 
 Ein Signal hat ein rein imaginäres Spektrum, das punktsymmetrisch zum Ursprung ist. Um welchen Signaltyp handelt es sich?
 
@@ -454,7 +454,7 @@ Welche Eigenschaften haben ideale frequenzselektive Filter im Zeitbereich?
 >- Nichtkausal<br>
 >- Unendlich große Impulsantwort (Sinc-Funktion)<br>
 >- Überschwingen<br>
->- Oszillierendes Einschwingen 14.18<br>
+>- Oszillierendes Einschwingen (kap. 14.18)<br>
 
 ## Faltung
 
@@ -502,11 +502,11 @@ Wie kann man einen Vokal in einem Sprachsignal erkennen?
 
 Was ist ein Phonem?
 
->die Menge aller Phone, die in einer gesprochenen Sprache die gleiche bedeutungsunterscheidende Funktion haben (z.B. gerolltes “r” und Rachen-“r”). (kap. 11.9)
+>Die Menge aller Phone, die in einer gesprochenen Sprache die gleiche bedeutungsunterscheidende Funktion haben (z.B. gerolltes “r” und Rachen-“r”). (kap. 11.9)
 
 Was sind Formanten?
 
->Diejenigen Frequenzbereiche, bei denen die relative Verstärkung (im Hohlraumresonator) am höchsten ist, bezeichnet man als Formanten. (kap. 11.18)
+>Die Frequenzbereiche, bei denen die relative Verstärkung (im Hohlraumresonator) am höchsten ist, bezeichnet man als Formanten. (kap. 11.18)
 
 Wie funktioniert ein Nächste-Nachbar-Klassifikator?
 
@@ -523,11 +523,14 @@ Ein System liefert für eine Sinusschwingung als Eingangssignal eine doppelt so 
 Sinusschwingung gleicher Frequenz als Ausgangssignal, das um 10 ms verzögert ist. Um
 welche Art von System handelt es sich?
 
+>Proportionalsystem mit Verzögerungsglied
+>kausal
+
 # Nicht kategorisiert
 
 Wie unterscheiden sich Korrelation und Kovarianz als Ähnlichkeitsmaß?
 
->Kovarianz ist unabhängig vom Mittelwert (kap. 11.26) (Bei der Korrelation ist die "Ähnlichkeit" bei lauten signalen immer größer)
+>Kovarianz ist unabhängig vom Mittelwert (kap. 11.26) (Bei der Korrelation ist die "Ähnlichkeit" bei lauten Signalen immer größer)
 
 Was ist eine Schwebung?
 
@@ -537,45 +540,97 @@ Was ist eine Schwebung?
 
 Wie beschreibt man mathematisch die Abtastung eines Signals g(t) zum Zeitpunkt t1?
 
-Wie sieht das Spektrum einer mit Abtastintervall 1 abgetasteten Funktion mit Spektrum G(omega) aus?
+>g(1) = integral(g(t) * δ(t - 1))
+
+Wie sieht das Spektrum einer mit Abtastintervall 1 abgetasteten Funktion mit Spektrum G(ω) aus?
+
+>Das Spektrum ist periodisch<br>
+>Wiederholt sich alle: 1/Abtastintervall
 
 Wie verändert sich das Spektrum einer Kammfunktion, wenn man das Abtastintervall verdreifacht?
 
+>Das Spektrum einer Kammfunktion ist wieder eine Kammfunktion. Die Abstände zwischen den einzelnen Kammpeaks verkürzen sich, wenn die Abtastabstände vergrößert werden.
+
 Unter welchen Bedingungen entsteht Aliasing?
+
+>Wenn das Signal unterabgetastet wird. Das bedeutet konkret, wenn sich im Signal Frequenzen über der halben Abtastfrequenz (Nyquist-Frequenz) befinden
 
 Wie funktioniert das Sägezahnverfahren bei der A/D-Wandlung?
 
+>1. Taktgeber<br>
+>2. Sample-and-Hold<br>
+>3. Sägezahn-Generator (synchronisiert mit Taktgeber)<br>
+>4. Sägezahnspannung wird mit Sample-and-Hold verglichen => wie lang passt der Sägezahn in das S-a-H<br>
+>5. Abzähle, wie viele Takte in die Vergleichsspannung aus 4. passen<br>
+>\#Pulsweitenmodulation
+
 Welche scheinbare Frequenz hat ein Sinussignal der Frequenz f0, wobei f0 größer als die Nyquistfrequenz, aber kleiner als die Abtastfrequenz f1 ist?
+
+>f1 - f0<br>
+>Die periodischen Spektren überlagern sich, dadurch erhält man verfälschte Frequenzen
 
 Was ist Aliasing?
 
+>Aliasing entsteht wenn das Abtasttheorem nicht eingehalten wird. Beim Aliasing entstehen verfälschte Frequenzen.
+
 Wie schafft man es, die Fouriertransformierte eines diskreten Signals im Computer zu berechnen, obwohl seine Fouriertransformierte kontinuierlich ist?
+
+>Man setzt das Eingangssignal periodisch fort, wodurch die Fouriertransformierte ebenfalls diskret und periodisch wird.
+>Da das Spektrum dann periodisch ist, ist nur eine der vielen Kopien das diskrete Spektrum des Signals (kap. 16.21)
 
 Ist die diskrete Fouriertransformation und die Fouriertransformation bei zeitdiskreten Signalen das Gleiche?
 
+>Nein. Die zeitdiskrete Fouriertransformation (normale Fouriertransformation) führt zu kontinuierlichen Spektren, da ein diskrete Signal als nicht-diskretes Signal verarbeitet wird.
+
 Was ist ein FIR-Filter?
+
+>FIR steht für Finite Impulse Response (Endliche Impulsantwort)<br>
+>verwendet nur eine begrenzte Anzahl von Daten am Eingang zur Berechnung des Filterergebnisses. Bsp. Mittelwertbildung durch Summierung einzelner aufeinander folgender Werte [Quelle: Wikipedia](https://de.wikipedia.org/wiki/Filter_mit_endlicher_Impulsantwort) (kap. 17 ff)
 
 Was ist ein FFT-Filter?
 
+>Signal wird über FFT in den Frequenzbereich transformiert (kap. 17.14)<br>
+>Vom fouriertransformatierten Signal können bestimmte Frequenzen abgeschnitten werden.<br>
+>Anschließend wird das Spektrum rücktransformiert und man erhält ein gefiltertes Signal.
+
 Wieviele Fourierkoeffizienten hat die Fourierreihe eines diskreten Signals, das aus 8 Abtastpunkten besteht?
+
+>8, von denen nur 4 relevant sind
 
 Warum braucht man bei diskreten periodischen Signalen nur endliche Fourierreihen zu ihrer Darstellung?
 
+>Das diskrete Signal ist durch die Faltung mit der Kammfunktion entstanden. Dadurch ist das Spektrum ebenfalls periodisch, denn es gilt: (f * g)(x) => F(ω) x G(ω).<br>
+>Da das Spektrum dann periodisch ist und sich nach der Abtastfrequenz wiederholt, ist nur ein endlicher Ausschnitt notwendig.
+>Abtastfrequenz ist endlich => Spektrum ist auch endlich.
+
 Was sind die Unterschiede zwischen den Analysegleichungen der diskreten und kontinuierlichen Fourierreihe?
+
+>Diskret: Aufsummierung
+>Kontinuierlich: Integral (kap. 16.18)
 
 Warum reicht bei diskreten linearen Systemen die Antwort auf einen Einheitsimpuls zum Zeitpunkt 0, um es vollständig zu charakterisieren?
 
+>Da hk[n] eine um k zeitverschobene Version von h0[n] ist. Im diskreten Fall reicht die Angabe der Impulsantwort h[n] = h0[n], um die Systemantwort für jeden beliebigen Input zu charakterisieren (kap. 17.7)
+
 Wie berechnet man die Systemantwort eines diskreten linearen Systems?
+
+>Faltung mit dem Dirac-Impuls.
+>Summe der zeitverschobenen Impulsantwort.
 
 Was ist der Hauptunterschied zwischen dem Spektrum eines aperiodischen kontinuierlichen Signals und dem eines aperiodischen diskreten Signals?
 
+>aperiodisch kontinuierliches Signal => aperiodisch kontinuierliches Spektrum<br>
+>aperiodisch diskretes Signal => periodisch kontinuierliches Spektrum => das wäre, als würde man ein kontinuierliches aperiodisches Signal mit der Kammfunktion falten. Dadurch entstünde auch ein periodisches Spektrum (da Spektrum der Kammfunktion ebenfalls eine Kammfunktion ist [periodisch]). Aufgrund der Aperiodizität ist das Signal endlich und besitzt deswegen ein kontinuierliches Spektrum, da sich unendlich hohe Frequenzen darin befinden müssen
+
 Wie sieht ein idealer zeitdiskreter Tiefpass im Spektralraum aus?
+
+>Sinc-Funktion.
 
 Ein zeitdiskreter Filter besteht aus der Differenz des momentanen Inputwertes und des Inputwertes des vergangenen Zeitschritts. Um was für eine Art von Filter handelt es sich?
 
+>Durchschnitt: Tiefpass.<br>
+>Differenz: Hochpass.
+
 Ist eine zeitdiskrete Sinusschwingung immer periodisch?
 
-
-# Danke
-
-Danke an Alex und Ismail
+>Nur, wenn die Periode ein ganzzahliges Vielfaches der Abtastzeit ist. (kap. 16.5)
