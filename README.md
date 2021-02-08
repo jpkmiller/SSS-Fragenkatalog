@@ -540,7 +540,7 @@ Was ist eine Schwebung?
 
 Wie beschreibt man mathematisch die Abtastung eines Signals g(t) zum Zeitpunkt t1?
 
->g(1) = integral(g(t) * δ(t - 1))
+>g(1) = Integral(g(t) * δ(t - 1))
 
 Wie sieht das Spektrum einer mit Abtastintervall 1 abgetasteten Funktion mit Spektrum G(ω) aus?
 
