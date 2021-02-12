@@ -261,7 +261,7 @@ Aus welchen Summentermen besteht die harmonische Form der Fourierreihe?
 
 Aus welchen Summentermen besteht die trigonometrische Form der Fourierreihe?
 
->`A0 + Summe[k](A[k] * sin(ωt) + B[k] * cos(ωt))`
+>`A0 + Summe[k](A[k] * sin(ωt) + B[k] * cos(ωt))`<br>
 >Mit A0 als Gleichanteil, ω als Kreisfrequenz und p als Phase
 
 Welchen Vorteil hat die trigonometrische Form der Fourierreihe gegenüber der harmonischen Form?
