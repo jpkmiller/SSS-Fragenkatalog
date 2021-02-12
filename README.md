@@ -225,7 +225,7 @@ Wie funktioniert die Kurzzeit-Fouriertransformation?
 
 Was muss man bei der Wahl des Fensters bei der Kurzzeit-Fouriertransformation beachten?
 
->Fenster groß ->hohe Frequenzauflösung, niedrige Zeitauflösung (Sonogramm schmal, aber überlappend)
+>Fenster groß ->hohe Frequenzauflösung, niedrige Zeitauflösung (Sonogramm schmal, aber überlappend)<br>
 >Fenster klein ->hohe Zeitauflösung, niedrige Frequenzauflösung (Sonogramm breit, aber abgegrenzt) (kap. 11.10)
 
 Die Fouriertransformierte von f_1(t) sei F_1(ω), die Fouriertransformierte von f_2(t)
@@ -236,7 +236,8 @@ welche Eigenschaft macht man sich dabei zunutze?
 
 Was ist das Gibbs-Phänomen?
 
->Über/Unterschwinger der Fouriertransformierten bei Sprüngen im Ausgangssignal
+>(Gibbsche) Über/Unterschwinger der Fouriertransformierten, deren Amplitude nicht kleiner wird, bei Sprüngen im Ausgangssignal (kap. 08.14)<br>
+>Verschwinden erst, wenn  unendlich viele Terme in der Fourrierreihe sind
 
 ## Symmetrien
 
@@ -253,13 +254,19 @@ Wie unterscheiden sich symmetrische von asymmetrischen Funktionen?
 
 Aus welchen Summentermen besteht die harmonische Form der Fourierreihe?
 
->A * sin(wt) + B * cos(wt)
+>`A0 + Summe[k](r[k] * cos(ωt - p[k]))`<br>
+>Mit A0 als Gleichanteil, r als Amplitude, ω als Kreisfrequenz und p als Phase
 
 ## trigonometrische Fourierreihe
 
+Aus welchen Summentermen besteht die trigonometrische Form der Fourierreihe?
+
+>`A0 + Summe[k](A[k] * sin(ωt) + B[k] * cos(ωt))`
+>Mit A0 als Gleichanteil, ω als Kreisfrequenz und p als Phase
+
 Welchen Vorteil hat die trigonometrische Form der Fourierreihe gegenüber der harmonischen Form?
 
->Das Wegfallen der Phase und die unbekannten Fourierkoeffizienten können berechnet werden
+>Das Wegfallen der Phase und die unbekannten Fourierkoeffizienten können berechnet werden.
 
 Wie sehen die Fourierkoeffizienten der zweiseitigen trigonometrischen Fourierreihe für `x(t) = a * cos(2 * ω * t)` aus?
 
