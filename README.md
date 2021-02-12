@@ -250,6 +250,14 @@ Wie unterscheiden sich symmetrische von asymmetrischen Funktionen?
 >Symmetrisch: f(-t) = f(t)<br>
 >Asymmetrisch: f(-t) = -f(t)<br>
 
+Was bedeutet hermitesch?
+>Symmetrisch zum Ursprung (kap. 10.13)<br>
+>F(ω) = F*(-ω)
+
+Wie sieht die Fouriertransformierte eines reellen Signals aus?
+>Symmetrisch zum Ursprung<br>
+>Realteil ist immer Symmetrisch zur Y-Achse und Imaginärteil ist immer symmetrisch zum Ursprung
+
 ## harmonische Fourierreihe
 
 Aus welchen Summentermen besteht die harmonische Form der Fourierreihe?
