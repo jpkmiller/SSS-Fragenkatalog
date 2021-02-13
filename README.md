@@ -74,13 +74,15 @@ Um was für eine Art von Normal handelt es sich bei dem Prototyp des Urkilogramm
 
 Was ist ein frequenzanaloges Ausgangssignal bei einem Sensor?
 
->Die Intensität der Eingangsgröße ist durch die Frequenz des Outputs dargestellt. (?)
+>Die Frequenz des Eingangssignals bestimmt die Intensität des Ausgangssignals.<br>
+>doppelte Frequenz am Eingang => doppelte Intesität am Ausgang.
 
 ## Messinstrumente
 
 Was ist der Unterschied zwischen einem Sensor und einem Messgerät?
 
->Messgeräte vergleichen zusätzlich den Ausgangswert des Sensors mit einer Bezugsgröße (?)
+>Messgeräte vergleichen zusätzlich den Ausgangswert des Sensors mit einer Bezugsgröße.<br>
+>Analogie: Spannung und Potential. Potential wird erst durch einen Vergleich zur Spannung.
 
 Ein Messinstrument hat einen Anzeigefehler von 1% und einen Skalenendwert von 5 A. Im Moment zeigt das Instrument einen Strom von 2 A an. In welchem Bereich liegt der wahre Wert des Stroms?
 
@@ -91,23 +93,23 @@ Auf der Anzeige Ihres analogen Messinstrumentes steht "KL 1.5". Was bedeutet das
 
 >Das bedeutet, dass der Anzeigefehler des Instrumentes bei 1.5% liegt
 
-Warum muss man jede Messung mit dem größten Messbereich beginnen?
+Warum muss man (bei einem Drehspulinstrument) jede Messung mit dem größten Messbereich beginnen?
 
->Da bei zu hoher Spannung Messinstrumente im kleinen Messbereich kaputt gehen können
+>Da bei zu hoher Stromstärke Messinstrumente im kleinen Messbereich kaputt gehen können (Drähte können z.B. verglühen).
 
 Warum sollte man immer im oberen Drittel der Anzeigeskala messen?
 
->Weil hier die Ablesegenauigkeit höher ist.
+>Weil absolute Messfehler (z.B. der Anzeigefehler) bei großen Messwerten weniger ins gewicht fallen als bei kleinen.
 
 Sie messen einen Widerstand R und einen Strom I und wollen daraus die Spannung U nach dem Ohmschen Gesetz bestimmen?
 U = R \* I.
 Der relative Fehler der Widerstandsmessung sei ΔR, der relative Fehler der Strommessung ΔI. Wie schätzen Sie den relativen Fehler ΔU der Spannungsmessung:
 
->ΔU = ΔR + ΔI (?)
+>ΔU = ΔR + ΔI
 
 Durch was entsteht der Anzeigefehler eines Messinstrumentes?
 
->Durch Schwankungen in der Temperatur und der Gebrauchslage.
+>Aufgrund von Fertigungstoleranzen, Lagerreibung, Montagevariationen der Skala usw.
 
 ### Drehspulinstrument
 
@@ -121,11 +123,12 @@ Wie funktioniert ein Drehspulinstrument?
 
 Warum kann ein Drehspulinstrument nicht beliebig schnell veränderliche Ströme oder Spannungen anzeigen?
 
->Weil Zeiger und Spule sich erste auf einen Gleichgewichtszustand zwischen Magnet- und Rückstellkraft einschwingen müssen
+>1. Weil Zeiger und Spule sich erste auf einen Gleichgewichtszustand zwischen Magnet- und Rückstellkraft einschwingen müssen
+>2. Wegen der Trägheit des Zeigers
 
 Was ist der Parallaxenfehler?
 
->Um einen Ablesefehler, bei dem die Nadel beim Drehspulmessinstrument je nach Blickwinkel auf eine andere Zahl zeigt.
+>Ablesefehler, bei dem die Nadel beim Drehspulmessinstrument je nach Blickwinkel auf eine andere Zahl zeigt.
 
 Um was für einen Vorgang handelt es sich bei der Einstellung des Skalennullpunktes eines Drehspulinstruments mithilfe der Rändelschraube im Anzeigefeld?
 
@@ -134,6 +137,7 @@ Um was für einen Vorgang handelt es sich bei der Einstellung des Skalennullpunk
 Warum hat ein Drehspulinstrument eine Spiralfeder?
 
 >Damit auf den Zeiger eine Rückstellkraft gegen die auslenkende magnetische Kraft erzeugt wird und sich so ein Gleichgewicht einstellen kann.
+>Die Rückstellkraft ist bekannt und durch die Auslenkung berechenbar. Dadurch kann die Stromstärke durch die Kraft die anhand der Auslenkung abgelesen wird berechnet werden. 
 
 ### Oszilloskop
 
@@ -148,10 +152,11 @@ Wie funktioniert ein analoges Oszilloskop?
 Was ist der Unterschied zwischen einem Sensor und einem Messgerät?
 
 >Ein Sensor ist Teil eines Messgerätes beziehungsweise einer Messkette des Messgerätes. Er spricht auf bestimmte physikalische / chemische Größen an.
+>Der Sensor erfasst einen Wert ohne Bezugsgröße. Bei Messgeräten wird diese Erfassung mit einer Bezugsgröße verglichen.
 
 Was für ein Sensortyp ist der im Praktikum eingesetzte Abstandssensor?
 
->Analog
+>Extrinsisch, Aktiv
 
 Wie funktioniert die Triggerung beim Oszilloskop?
 
@@ -174,11 +179,12 @@ Eine indirekte Messgröße A berechnet sich als Differenz zweier direkt gemessen
 Sie haben eine indirekt gemessene Größe A, die von mehreren Eingangsgrößen B, C, D, ... abhängt, die alle den gleichen Messfehler haben. Welche der Eingangsgrößen hat den größten Einfluss auf den Messfehler von A?
 
 >Die mit der größten Gewichtung<br>
->Diejenige Eingangsgröße, deren partielle Ableitung von A am größten ist. (?)
+>Diejenige Eingangsgröße, deren partielle Ableitung von A am größten ist.
+>![Formel zur berechnung der Fehlerfortpflanzung](./imgs/fehlerfortpflanzung.PNG)<br>
 
 Sie haben 20 Einzelmessungen mit einer Standardabweichung des Mittelwertes von s. Wie groß ist das Vertrauensintervall, in das der wahre Wert der Messgröße mit einer Wahrscheinlichkeit von 95,5 % fällt?
 
->2 Mal die Empirische Standardabweichung x Arithmetisches Mittel
+>+/- 2,09 \* Standardabweichung für den Mittelwert
 
 Wie schätzt man den wahren Wert einer Messgröße, wenn mehrere fehlerbehaftete Messungen vorliegen?
 
@@ -188,51 +194,57 @@ Wie schätzt man den wahren Wert einer Messgröße, wenn mehrere fehlerbehaftete
 
 Was leistet die lineare Regression?
 
->Bestimmung der Übertragungsfunktion
+>Bestimmung der (linear angenommenen) Übertragungsfunktion 
 
 Kann man die lineare Regression auch bei Kennlinien anwenden, die einem Gesetz der Form
 `y = x ^ a` folgen?
 
->Ja, und zwar in dem man die Eingangsgröße logarithmiert und die Exponentialfunktion als Ausgangsgröße nimmt
+>Ja, und zwar in dem man die Eingangsgröße logarithmiert und die Exponentialfunktion als Ausgangsgröße nimmt.<br>
+>Die so skalierte Übertragungsfunktion ist "linearisiert" und dadurch mit lin. reg. berechenbar.
 
 # Signale
 
 Was ist ein gerades Signal?
 
->Ein gerade Signal ist ein Signal mit Symmetrie zur Y-Achse
+>Ein gerades Signal ist ein Signal mit Symmetrie zur Y-Achse (f(x) = f(-x))
 
 Was ist ein fastperiodisches Signal?
 
->Signal das in einem Bereich periodisch ist
+>Signal das in einem (oder mehreren) Bereich periodisch ist
 
 Welche Bedingungen muss ein aperiodisches Signal NICHT erfüllen, damit sein Fouriertransformierte existiert?
 
 >Es darf innerhalb einer Periode nur unendlich viele Nullstellen haben. (?)
+>Vielleicht spielt er hier auf die 1. Dirichlet-Bedingung an:
+>>*f (t) muss über eine Periode absolut integrierbar sein*<br>
+>
+>Das stimmt ja nur bedingt, da das Signal ja nur in einem Intervall Integrierbar sein muss oder? 
 
 # Fourier, Spektrum, Phase, ...
 
 Welche Signale lassen sich als Fourierreihe darstellen?
 
->Alle physikalisch erzeugbare Signale
+>- Alle physikalisch erzeugbare Signale
+>- Alle Signale, welche die Dirichlet-Bedingungen erfüllen
 
 ## Fouriertransformation
 
 Wie funktioniert die Kurzzeit-Fouriertransformation?
 
->1. überlappende Fenster erstellen<br>
->2. Fensterfunktion anwenden<br>
->3. Fenster fourier analysieren (kap. 11.10)<br>
+>1. überlappende Fenster erstellen
+>2. Fensterfunktion anwenden
+>3. Fenster fourier analysieren (kap. 11.10)
 
 Was muss man bei der Wahl des Fensters bei der Kurzzeit-Fouriertransformation beachten?
 
 >Fenster groß ->hohe Frequenzauflösung, niedrige Zeitauflösung (Sonogramm schmal, aber überlappend)<br>
 >Fenster klein ->hohe Zeitauflösung, niedrige Frequenzauflösung (Sonogramm breit, aber abgegrenzt) (kap. 11.10)
 
-Die Fouriertransformierte von f_1(t) sei F_1(ω), die Fouriertransformierte von f_2(t)
-sei F_2(ω). Wie sieht die Fouriertransformierte von f(t) = 3 f_1(t) - 0.7 f_2(t) aus, und
+Die Fouriertransformierte von f_1(t) sei F_1(ω), die Fouriertransformierte von f_2(t)
+sei F_2(ω). Wie sieht die Fouriertransformierte von f(t) = 3\*f_1(t) - 0.7\*f_2(t) aus, und
 welche Eigenschaft macht man sich dabei zunutze?
 
->aus der Linearitätseigenschaft folgt F(t) = 3 * F_1(ω) - 0.7 * F_2(ω)
+>aus der Linearitätseigenschaft folgt F(t) = 3 \* F_1(ω) - 0.7 \* F_2(ω)
 
 Was ist das Gibbs-Phänomen?
 
@@ -247,8 +259,10 @@ Welche Symmetrien hat die zweiseitige Fourierreihe?
 
 Wie unterscheiden sich symmetrische von asymmetrischen Funktionen?
 
->Symmetrisch: f(-t) = f(t)<br>
->Asymmetrisch: f(-t) = -f(t)<br>
+>Symmetrisch: f(-t) = f(t) oder f(-t) = -f(t)<br>
+>Man kann bei Symmetrien die spektren schätzen:
+>- Gerades signal: nur Kosinus-Terme, Imaginärteil: 0
+>- Ungerades Signal: nur Sinus-Terme, Realteil: 0
 
 Was bedeutet hermitesch?
 >Symmetrisch zum Ursprung (kap. 10.13)<br>
@@ -271,6 +285,7 @@ Aus welchen Summentermen besteht die trigonometrische Form der Fourierreihe?
 
 >`A0 + Summe[k](A[k] * sin(ωt) + B[k] * cos(ωt))`<br>
 >Mit A0 als Gleichanteil, ω als Kreisfrequenz und p als Phase
+>Zur Frage: Aus skallierten, verschobenen Kosinus-Termen.
 
 Welchen Vorteil hat die trigonometrische Form der Fourierreihe gegenüber der harmonischen Form?
 
@@ -278,11 +293,11 @@ Welchen Vorteil hat die trigonometrische Form der Fourierreihe gegenüber der ha
 
 Wie sehen die Fourierkoeffizienten der zweiseitigen trigonometrischen Fourierreihe für `x(t) = a * cos(2 * ω * t)` aus?
 
-> 
+>A<sub>-1</sub> = -2, A<sub>1</sub> = 2
 
-Wie viele Terme hat die zweiseitige trigonometrische Fourierreihe von `1 + sin(t) + 3 cos(2t)`?
+Wie viele Terme hat die **zweiseitige** trigonometrische Fourierreihe von `1 + sin(t) + 3 cos(2t)`?
 
->3
+>5
 
 ## komplexe Fourierreihe, komplexe Zahlen
 
@@ -296,17 +311,19 @@ Was ist der Unterschied zwischen der Menge der zweidimensionalen Vektoren und de
 
 Aus welchen Grundsignalen besteht die komplexe Fourierreihe?
 
->Realteil beziehungsweise Cos-Anteil und Imaginärteil beziehungsweise Sin-Anteil.
+>Realteil beziehungsweise Cos-Anteil und Imaginärteil beziehungsweise Sin-Anteil.<br>
+>Zur Frage: Aus komplexen Zahlen
 
 Was haben komplexe Zahlen mit Sinusschwingungen zu tun?
 
->Mithilfe der komplexen Fouriertransformation lassen sich Sinusschwingungen in der kartesischen Darstellung der komplexen Zahlen darstellen
+>Mithilfe der komplexen Fouriertransformation lassen sich Sinusschwingungen in der kartesischen Darstellung der komplexen Zahlen darstellen.
+>Der Imaginärteil der komplexen Zahl entspricht hier dem Sinusanteil.
 
 ## Frequenz
 
 Wie berechnet sich die Frequenz einer Sinusschwingung, das aus der Summe einer Sinus- und einer Kosinusfunktion gleicher Frequenz entsteht?
 
->Frequenz ändert sich nicht (?)
+>Frequenz bleibt gleich
 
 ## Spektrum, Frequenzspektrum
 
@@ -320,7 +337,7 @@ Sie beobachten ein Spektrum aus mehreren Linien bei 100 Hz, 200 Hz, 270 Hz, 400 
 
 Wie sieht das Spektrum eines einzelnen Rechteckimpulses aus?
 
->stetige Funktion.
+>Sinc-Funktion.
 
 Sie zerlegen ein relativ glattes, periodisches Signal in mehrere Abschnitte und bestimmen in jedem Abschnitt die lokale Fouriertransformation. Wie unterscheiden sich die lokalen Spektra vom Gesamtspektrum und warum?
 
