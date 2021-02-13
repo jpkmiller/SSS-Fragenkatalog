@@ -595,7 +595,10 @@ Wie schafft man es, die Fouriertransformierte eines diskreten Signals im Compute
 
 Ist die diskrete Fouriertransformation und die Fouriertransformation bei zeitdiskreten Signalen das Gleiche?
 
->Nein. Die zeitdiskrete Fouriertransformation (normale Fouriertransformation) führt zu kontinuierlichen Spektren, da ein diskrete Signal als nicht-diskretes Signal verarbeitet wird.
+>Nein. Die [Diskrete Fourier-Transformation (DFT)](https://de.wikipedia.org/wiki/Diskrete_Fourier-Transformation) geht implizit von einem periodischen Signal aus (periodische Fortsetzung).
+>Das Spektrum wird dadurch diskret (und für einen Computer berechenbar). 
+>Im gegensatz dazu geht die [Fouriertransformation für zeitdiskrete Signale (DTFT)](https://de.wikipedia.org/wiki/Fouriertransformation_f%C3%BCr_zeitdiskrete_Signale) von **unendlichen, zeitdiskreten Signalen** aus, was zu einem kontinuierlichen Spektrum führt
+>Kurz: Spektrum der DFT ist diskret, Spektrum der DTFT ist kontinuierlich.
 
 Was ist ein FIR-Filter?
 
