@@ -610,6 +610,10 @@ Was ist ein FFT-Filter?
 >Signal wird über FFT in den Frequenzbereich transformiert (kap. 17.14)<br>
 >Vom fouriertransformatierten Signal können bestimmte Frequenzen abgeschnitten werden.<br>
 >Anschließend wird das Spektrum rücktransformiert und man erhält ein gefiltertes Signal.
+>
+>Allgemeines zu Filtern: 
+>Ein Filter kann durch eine Faltung des Signals (mit dem Filter) im Ortsraum beschrieben werden.
+>Diese Faltung ist wiederum gleich der Multiplikation des Spektrums des Filters und dem Spektrum des Signals!
 
 Wieviele Fourierkoeffizienten hat die Fourierreihe eines diskreten Signals, das aus 8 Abtastpunkten besteht?
 
@@ -628,12 +632,20 @@ Was sind die Unterschiede zwischen den Analysegleichungen der diskreten und kont
 
 Warum reicht bei diskreten linearen Systemen die Antwort auf einen Einheitsimpuls zum Zeitpunkt 0, um es vollständig zu charakterisieren?
 
->Da hk[n] eine um k zeitverschobene Version von h0[n] ist. Im diskreten Fall reicht die Angabe der Impulsantwort h[n] = h0[n], um die Systemantwort für jeden beliebigen Input zu charakterisieren (kap. 17.7)
+>Da hk[n] eine um k zeitverschobene Version von h0[n] ist. Im diskreten Fall reicht die Angabe der Impulsantwort h[n] = h0[n], um die Systemantwort für jeden beliebigen Input zu charakterisieren (kap. 17.7)<br>
+>Ein lineares system faltet ein Signal. Wird der Einheitsimpuls mit einer unbekannten Funktion f(x) gefaltet, erhält man als Ergebnis wieder f(x):
 
 Wie berechnet man die Systemantwort eines diskreten linearen Systems?
 
 >Faltung mit dem Dirac-Impuls.
->Summe der zeitverschobenen Impulsantwort.
+>Summe der zeitverschobenen Impulsantworten.<br>
+>Faltung etwas anschaulicher: 
+>1. Fahre mit der Faltungsfunktion über die Funktion, als wäre sie ein Filter.
+>2. Berechne an jeder Stelle das gewichtete Mittel (wie beim 2D Filter).
+>3. Das Ergebnis ist die Faltung der beiden Funktionen
+>
+>Beispiel Dirac:<br>
+>"Filter" ist nur am "Hotspot" 1, sonst 0. Fährt man damit über eine Funktion f(x) so erhält man wieder f(x) => Der Dirac-Impuls ist das "neutrale Element" der Faltung. 
 
 Was ist der Hauptunterschied zwischen dem Spektrum eines aperiodischen kontinuierlichen Signals und dem eines aperiodischen diskreten Signals?
 
@@ -642,7 +654,8 @@ Was ist der Hauptunterschied zwischen dem Spektrum eines aperiodischen kontinuie
 
 Wie sieht ein idealer zeitdiskreter Tiefpass im Spektralraum aus?
 
->Sinc-Funktion.
+>*Wie eine diskrete Rechteckschwingung.*
+>![Spektren Zeitdiskreter Filter](./imgs/zeitdiskrete_filter_spektrum.PNG)
 
 Ein zeitdiskreter Filter besteht aus der Differenz des momentanen Inputwertes und des Inputwertes des vergangenen Zeitschritts. Um was für eine Art von Filter handelt es sich?
 
@@ -651,4 +664,7 @@ Ein zeitdiskreter Filter besteht aus der Differenz des momentanen Inputwertes un
 
 Ist eine zeitdiskrete Sinusschwingung immer periodisch?
 
+<!---
+FIXME: Ich glaube da sollten wir nochmal drüber nachdenken oder?
+-->
 >Nur, wenn die Periode ein ganzzahliges Vielfaches der Abtastzeit ist. (kap. 16.5)
