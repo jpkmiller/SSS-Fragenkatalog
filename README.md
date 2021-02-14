@@ -1,39 +1,40 @@
-Fragenkatalog SSS
+# Fragenkatalog SSS
 
 Alle Angaben sind ohne Gewähr
 
-* [Definitionen](#definitionen)<br>
-* [Python](#python)<br>
-* [Messungen, Sensoren](#messungen-sensoren)<br>
-    * [Messinstrumente](#messinstrumente)<br>
-      * [Drehspulinstrument](#drehspulinstrument)<br>
-      * [Oszilloskop](#oszilloskop)<br>
-  * [Messgrößen](#messgrößen)<br>
-  * [Lineare Regression](#lineare-regression)<br>
-* [Signale](#signale)<br>
-* [Fourier, Spektrum, Phase, ...](#fourier-spektrum-phase-)<br>
-  * [Fouriertransformation](#fouriertransformation)<br>
-  * [Symmetrien](#symmetrien)<br>
-  * [harmonische Fourierreihe](#harmonische-fourierreihe)<br>
-  * [trigonometrische Fourierreihe](#trigonometrische-fourierreihe)<br>
-  * [komplexe Fourierreihe, komplexe Zahlen](#komplexe-fourierreihe-komplexe-zahlen)<br>
-  * [Frequenz](#frequenz)<br>
-  * [Spektrum, Frequenzspektrum](#spektrum-frequenzspektrum)<br>
-  * [Phase, Phasengang, Phasenspektrum](#phase-phasengang-phasenspektrum)<br>
-  * [Amplitude, Amplitudengang, Amplitudenspektrum](#amplitude-amplitudengang-amplitudenspektrum)<br>
-  * [Dirac](#dirac)<br>
-  * [Frequenz-Zeit-Unschärferelation](#frequenz-zeit-unschärferelation)<br>
-* [Filter](#filter)<br>
-  * [Faltung](#faltung)<br>
-* [Bildsignale](#bildsignale)<br>
-* [Akustische Signale](#akustische-signale)<br>
-* [Systeme](#systeme)<br>
-* [Nicht kategorisiert](#nicht-kategorisiert)<br>
-* [Neue Fragen](#neue-fragen)<br>
+- [Fragenkatalog SSS](#fragenkatalog-sss)
+- [Definitionen](#definitionen)
+- [Python](#python)
+- [Messungen, Sensoren](#messungen-sensoren)
+  - [Messinstrumente](#messinstrumente)
+    - [Drehspulinstrument](#drehspulinstrument)
+    - [Oszilloskop](#oszilloskop)
+  - [Messgrößen](#messgrößen)
+  - [Lineare Regression](#lineare-regression)
+- [Signale](#signale)
+- [Fourier, Spektrum, Phase](#fourier-spektrum-phase)
+  - [Fouriertransformation](#fouriertransformation)
+  - [Symmetrien](#symmetrien)
+  - [harmonische Fourierreihe](#harmonische-fourierreihe)
+  - [trigonometrische Fourierreihe](#trigonometrische-fourierreihe)
+  - [komplexe Fourierreihe, komplexe Zahlen](#komplexe-fourierreihe-komplexe-zahlen)
+  - [Frequenz](#frequenz)
+  - [Spektrum, Frequenzspektrum](#spektrum-frequenzspektrum)
+  - [Phase, Phasengang, Phasenspektrum](#phase-phasengang-phasenspektrum)
+  - [Amplitude, Amplitudengang, Amplitudenspektrum](#amplitude-amplitudengang-amplitudenspektrum)
+  - [Dirac](#dirac)
+  - [Frequenz-Zeit-Unschärferelation](#frequenz-zeit-unschärferelation)
+- [Filter](#filter)
+  - [Faltung](#faltung)
+- [Bildsignale](#bildsignale)
+- [Akustische Signale](#akustische-signale)
+- [Systeme](#systeme)
+- [Nicht kategorisiert](#nicht-kategorisiert)
+- [Neue Fragen](#neue-fragen)
 
 # Definitionen
 Signal:
->Schwingung/Wellen<br>
+>Schwingung/Wellen\
 >Alle Schwingungen sind aus Sinus-Schwingungen verschiedener Frequenz und Amplitude zusammengesetzt
 
 Frequenzgang:
@@ -53,13 +54,13 @@ Inverse Fouriertransformation:
 
 # Python
 
-Sie haben in Python eine 5 x 5 - Matrix a angelegt. Wie greifen Sie auf das zweite Element der dritten Zeile zu?<br>
+Sie haben in Python eine 5 x 5 - Matrix a angelegt. Wie greifen Sie auf das zweite Element der dritten Zeile zu?\
 
 ```python
 a[3][2]
 ```
 
-Wie legt man in Python eine 2 x 2 Matrix an, die in der ersten Zeile nur Einsen und in der zweiten Zeile nur Zweien hat?<br>
+Wie legt man in Python eine 2 x 2 Matrix an, die in der ersten Zeile nur Einsen und in der zweiten Zeile nur Zweien hat?\
 
 ```python
 import numpy as np
@@ -74,19 +75,19 @@ Um was für eine Art von Normal handelt es sich bei dem Prototyp des Urkilogramm
 
 Was ist ein frequenzanaloges Ausgangssignal bei einem Sensor?
 
->Die Frequenz des Eingangssignals bestimmt die Intensität des Ausgangssignals.<br>
+>Die Frequenz des Eingangssignals bestimmt die Intensität des Ausgangssignals.\
 >doppelte Frequenz am Eingang => doppelte Intesität am Ausgang.
 
 ## Messinstrumente
 
 Was ist der Unterschied zwischen einem Sensor und einem Messgerät?
 
->Messgeräte vergleichen zusätzlich den Ausgangswert des Sensors mit einer Bezugsgröße.<br>
+>Messgeräte vergleichen zusätzlich den Ausgangswert des Sensors mit einer Bezugsgröße.\
 >Analogie: Spannung und Potential. Potential wird erst durch einen Vergleich zur Spannung.
 
 Ein Messinstrument hat einen Anzeigefehler von 1% und einen Skalenendwert von 5 A. Im Moment zeigt das Instrument einen Strom von 2 A an. In welchem Bereich liegt der wahre Wert des Stroms?
 
->5 * 0.01 = 0.05<br>
+>5 * 0.01 = 0.05\
 >2 +- 0.05 A
 
 Auf der Anzeige Ihres analogen Messinstrumentes steht "KL 1.5". Was bedeutet das?
@@ -178,9 +179,9 @@ Eine indirekte Messgröße A berechnet sich als Differenz zweier direkt gemessen
 
 Sie haben eine indirekt gemessene Größe A, die von mehreren Eingangsgrößen B, C, D, ... abhängt, die alle den gleichen Messfehler haben. Welche der Eingangsgrößen hat den größten Einfluss auf den Messfehler von A?
 
->Die mit der größten Gewichtung<br>
+>Die mit der größten Gewichtung\
 >Diejenige Eingangsgröße, deren partielle Ableitung von A am größten ist.
->![Formel zur berechnung der Fehlerfortpflanzung](./imgs/fehlerfortpflanzung.PNG)<br>
+>![Formel zur berechnung der Fehlerfortpflanzung](./imgs/fehlerfortpflanzung.PNG)\
 
 Sie haben 20 Einzelmessungen mit einer Standardabweichung des Mittelwertes von s. Wie groß ist das Vertrauensintervall, in das der wahre Wert der Messgröße mit einer Wahrscheinlichkeit von 95,5 % fällt?
 
@@ -199,7 +200,7 @@ Was leistet die lineare Regression?
 Kann man die lineare Regression auch bei Kennlinien anwenden, die einem Gesetz der Form
 `y = x ^ a` folgen?
 
->Ja, und zwar in dem man die Eingangsgröße logarithmiert und die Exponentialfunktion als Ausgangsgröße nimmt.<br>
+>Ja, und zwar in dem man die Eingangsgröße logarithmiert und die Exponentialfunktion als Ausgangsgröße nimmt.\
 >Die so skalierte Übertragungsfunktion ist "linearisiert" und dadurch mit lin. reg. berechenbar.
 
 # Signale
@@ -214,42 +215,43 @@ Was ist ein fastperiodisches Signal?
 
 Welche Bedingungen muss ein aperiodisches Signal NICHT erfüllen, damit sein Fouriertransformierte existiert?
 
->Es darf innerhalb einer Periode nur unendlich viele Nullstellen haben. (?)
+>Es darf innerhalb einer Periode nur unendlich viele Nullstellen haben. (?)\
 >Vielleicht spielt er hier auf die 1. Dirichlet-Bedingung an:
->>*f (t) muss über eine Periode absolut integrierbar sein*<br>
+>>*f (t) muss über eine Periode absolut integrierbar sein*\
 >
 >Das stimmt ja nur bedingt, da das Signal ja nur in einem Intervall Integrierbar sein muss oder? 
 
-# Fourier, Spektrum, Phase, ...
+# Fourier, Spektrum, Phase
 
 Welche Signale lassen sich als Fourierreihe darstellen?
 
->- Alle physikalisch erzeugbare Signale
->- Alle Signale, welche die Dirichlet-Bedingungen erfüllen
+> * Alle physikalisch erzeugbaren Signale
+> * Alle Signale, welche die Dirichlet-Bedingungen erfüllen
+
+Betrachten Sie die periodische Funktion `x(t) = 2/t` mit 0 \< t \<\= 1 und der Grundperiode 1 (d.h. Intervall [0, 1] wird unendlich oft wiederholt). Gibt es für diese Funktion eine Darstellung als Fourierreihe? Warum?
+>Diese Funktion hat keine Fourierreihe, da sie innerhalb einer Periode unendlich viele Unstetigkeiten hat.
 
 ## Fouriertransformation
 
 Wie funktioniert die Kurzzeit-Fouriertransformation?
 
 >1. überlappende Fenster erstellen
->2. Fensterfunktion anwenden
+>2. Fensterfunktion (bspw. Gauß, Hamming) anwenden
 >3. Fenster fourier analysieren (kap. 11.10)
 
 Was muss man bei der Wahl des Fensters bei der Kurzzeit-Fouriertransformation beachten?
 
->Fenster groß ->hohe Frequenzauflösung, niedrige Zeitauflösung (Sonogramm schmal, aber überlappend)<br>
+>Fenster groß ->hohe Frequenzauflösung, niedrige Zeitauflösung (Sonogramm schmal, aber überlappend)\
 >Fenster klein ->hohe Zeitauflösung, niedrige Frequenzauflösung (Sonogramm breit, aber abgegrenzt) (kap. 11.10)
 
-Die Fouriertransformierte von f_1(t) sei F_1(ω), die Fouriertransformierte von f_2(t)
-sei F_2(ω). Wie sieht die Fouriertransformierte von f(t) = 3\*f_1(t) - 0.7\*f_2(t) aus, und
-welche Eigenschaft macht man sich dabei zunutze?
+Die Fouriertransformierte von f_1(t) sei F_1(ω), die Fouriertransformierte von f_2(t) sei F_2(ω). Wie sieht die Fouriertransformierte von f(t) = 3\*f_1(t) - 0.7\*f_2(t) aus, und welche Eigenschaft macht man sich dabei zunutze?
 
 >aus der Linearitätseigenschaft folgt F(t) = 3 \* F_1(ω) - 0.7 \* F_2(ω)
 
 Was ist das Gibbs-Phänomen?
 
->(Gibbsche) Über/Unterschwinger der Fouriertransformierten, deren Amplitude nicht kleiner wird, bei Sprüngen im Ausgangssignal (kap. 08.14)<br>
->Verschwinden erst, wenn  unendlich viele Terme in der Fourrierreihe sind
+>(Gibbsche) Über/Unterschwinger der Fouriertransformierten, deren Amplitude nicht kleiner wird, bei Sprüngen im Ausgangssignal (kap. 08.14)\
+>Verschwinden erst, wenn unendlich viele Terme in der Fourrierreihe sind
 
 ## Symmetrien
 
@@ -259,33 +261,32 @@ Welche Symmetrien hat die zweiseitige Fourierreihe?
 
 Wie unterscheiden sich symmetrische von asymmetrischen Funktionen?
 
->Symmetrisch: f(-t) = f(t) oder f(-t) = -f(t)<br>
->Man kann bei Symmetrien die spektren schätzen:
->- Gerades signal: nur Kosinus-Terme, Imaginärteil: 0
->- Ungerades Signal: nur Sinus-Terme, Realteil: 0
+>Symmetrisch: f(-t) = f(t) oder f(-t) = -f(t)\
+>Man kann bei Symmetrien die Spektren schätzen:
+>
+> * Gerades Signal: nur Kosinus-Terme, Imaginärteil: 0
+> * Ungerades Signal: nur Sinus-Terme, Realteil: 0
 
 Was bedeutet hermitesch?
->Symmetrisch zum Ursprung (kap. 10.13)<br>
->F(ω) = F*(-ω)
+>![Hermitesche Funktionen](./imgs/hermitesch.png "https://kogs-www.informatik.uni-hamburg.de/~seppke/content/teaching/wise1718/mms/MMS-1415-05.pdf")
 
 Wie sieht die Fouriertransformierte eines reellen Signals aus?
->Symmetrisch zum Ursprung<br>
 >Realteil ist immer Symmetrisch zur Y-Achse und Imaginärteil ist immer symmetrisch zum Ursprung
 
 ## harmonische Fourierreihe
 
 Aus welchen Summentermen besteht die harmonische Form der Fourierreihe?
 
->`A0 + Summe[k](r[k] * cos(ωt - p[k]))`<br>
+>`A0 + Summe[k](r[k] * cos(ωt - p[k]))`\
 >Mit A0 als Gleichanteil, r als Amplitude, ω als Kreisfrequenz und p als Phase
 
 ## trigonometrische Fourierreihe
 
 Aus welchen Summentermen besteht die trigonometrische Form der Fourierreihe?
 
->`A0 + Summe[k](A[k] * sin(kωt) + B[k] * cos(kωt))`<br>
->Mit A0 als Gleichanteil, ω als Kreisfrequenz und p als Phase
->Zur Frage: Aus skallierten, verschobenen Kosinus-Termen.
+>`A0 + Summe[k](A[k] * sin(kωt) + B[k] * cos(kωt))`\
+>Mit A0 als Gleichanteil, ω als Kreisfrequenz und p als Phase.\
+>Zur Frage: Aus skalierten, verschobenen Kosinus-Termen.
 
 Welchen Vorteil hat die trigonometrische Form der Fourierreihe gegenüber der harmonischen Form?
 
@@ -293,7 +294,7 @@ Welchen Vorteil hat die trigonometrische Form der Fourierreihe gegenüber der ha
 
 Wie sehen die Fourierkoeffizienten der zweiseitigen trigonometrischen Fourierreihe für `x(t) = a * cos(2 * ω * t)` aus?
 
->A<sub>-1</sub> = -2, A<sub>1</sub> = 2
+>A<sub>-2</sub> = a\/2, A<sub>2</sub> = a\/2
 
 Wie viele Terme hat die **zweiseitige** trigonometrische Fourierreihe von `1 + sin(t) + 3 cos(2t)`?
 
@@ -311,7 +312,7 @@ Was ist der Unterschied zwischen der Menge der zweidimensionalen Vektoren und de
 
 Aus welchen Grundsignalen besteht die komplexe Fourierreihe?
 
->Realteil beziehungsweise Cos-Anteil und Imaginärteil beziehungsweise Sin-Anteil.<br>
+>Realteil beziehungsweise Cos-Anteil und Imaginärteil beziehungsweise Sin-Anteil.\
 >Zur Frage: Aus komplexen Zahlen
 
 Was haben komplexe Zahlen mit Sinusschwingungen zu tun?
@@ -341,19 +342,19 @@ Wie sieht das Spektrum eines einzelnen Rechteckimpulses aus?
 
 Sie zerlegen ein relativ glattes, periodisches Signal in mehrere Abschnitte und bestimmen in jedem Abschnitt die lokale Fouriertransformation. Wie unterscheiden sich die lokalen Spektra vom Gesamtspektrum und warum?
 
->mehr hohe frequenzen, wegen den Sprüngen an den Fensterrändern.
+>mehr hohe Frequenzen, wegen den Sprüngen an den Fensterrändern.
+>langes Signal und großes Fenster -> wenig Unterschied zwischen Fenster und gesamten Signal.
+>kurzes Signal und kleine Fenster -> großer Unterschied, da keine Frequenzlokalisierung mehr möglich.
 
-Bei dem Spektrum eines Signals ist der Realteil gerade und der Imaginärteil ungerade.
-Um was für einen Signaltyp handelt es sich?
+Bei dem Spektrum eines Signals ist der Realteil gerade und der Imaginärteil ungerade. Um was für einen Signaltyp handelt es sich?
 
->reelles Signal, ohne Symmetrie.
+>reelles Signal, ohne Symmetrie, da gerade und ungerade Anteile enthalten sind.
 
 Wie unterscheiden sich die Spektren von schnell und langsam veränderlichen Signalen?
 
->Die Spektren schnell veränderlicher Signale haben „unendlich“ hohe Frequenzen
+>Die Spektren schnell veränderlicher Signale haben „unendlich“ hohe Frequenzen.
 
-Wie verändert sich das Spektrums einer Rechteckschwingung mit fester Impulsdauer, bei
-der die Periode immer weiter erhöht wird?
+Wie verändert sich das Spektrums einer Rechteckschwingung mit **fester Impulsdauer**, bei der die Periode immer weiter erhöht wird?
 
 >Das Experiment zeigt: wird die Periodendauer T (bei gleichbleibender Impulsdauer) größer, so wird der Abstand der Linien 1/T notwendigerweise immer enger.
 
@@ -372,13 +373,13 @@ Was passiert mit dem Spektrum eines Signals, wenn man es in zeitlicher Richtung 
 
 >Die Amplituden bleiben gleich, die Phasen ändern sich linear mit der Frequenz.
 >
->Es gilt der Verschiebungssatz: f(t-a) -> e<sup>-iωa</sup> \* F(ω) 
+>Es gilt der Verschiebungssatz: f(t-a) -> e<sup>-iωa</sup> \* F(ω)
 
 Wie sieht das Spektrum eines Signals aus, das um den Faktor 2 im Zeitbereich gestreckt wird?
 
 >Das Spektrum wird schmaler, da aufgrund der Zeit-Frequenz-Unschärferelation eine höhere Auflösung in der Frequenz gegeben ist.
 >
->Es gilt der Ähnlichkeitssatz: f(a*t) -> (1/|a|) * F(ω/a) 
+>Es gilt der Ähnlichkeitssatz: f(a*t) -> (1/|a|)* F(ω/a)
 
 Was passiert mit dem Spektrum eines Signals, wenn man es mit einem konstanten Phasenfaktor mit dem Phasenwinkel a multipliziert?
 
@@ -400,11 +401,13 @@ Was ist ein Bode-Diagramm?
 Ein Signal hat ein rein imaginäres Spektrum, das punktsymmetrisch zum Ursprung ist. Um welchen Signaltyp handelt es sich?
 
 >Um ein reelles ungerades Signal.
->>- Ein reelles und gerades Signal hat eine rein reelle, gerade Fouriertransformierte.
->>- **Ein reelles und ungerades Signal hat eine rein imaginäre, ungerade Fouriertransformierte.**
+>
+>> * Ein reelles und gerades Signal hat eine rein reelle, gerade Fouriertransformierte.
+>> * **Ein reelles und ungerades Signal hat eine rein imaginäre, ungerade Fouriertransformierte.**
 
 
 Welche der folgenden Signale belegt das schmalste Frequenzband?
+
 * möglichst breite Rechteckfunktion
 * Gaußfunktion mit kleiner Standardabweichung
 * **Gabor-Wavelet**
@@ -468,9 +471,9 @@ Was besagt die Frequenz-Zeit-Unschärferelation?
 
 Was bedeutet die Komplementarität von Frequenz und Zeit?
 
->Je eingeschränkter das Frequenzband eines Signals ist, desto größer muss zwangsläufig die Zeitdauer des Signals sein.<br>
->Eine zeitliche Eingrenzung der Signaldauer ∆t bedeutet eine Ausweitung des Frequenzbandes ∆f.<br>
->Umgekehrt gilt: Je eingeschränkter das Frequenzband eines Signals ist, desto größer muss zwangsläufig die Zeitdauer des Signals sein.<br>
+>Je eingeschränkter das Frequenzband eines Signals ist, desto größer muss zwangsläufig die Zeitdauer des Signals sein.\
+>Eine zeitliche Eingrenzung der Signaldauer ∆t bedeutet eine Ausweitung des Frequenzbandes ∆f.\
+>Umgekehrt gilt: Je eingeschränkter das Frequenzband eines Signals ist, desto größer muss zwangsläufig die Zeitdauer des Signals sein.\
 
 Bei welchem Signal ist das Produkt aus Zeit- und Frequenzunschärfe genau gleich 1?
 
@@ -490,22 +493,23 @@ Sie haben zwei fastperiodische Signale: 500ms und 1s. Wie unterscheiden sich die
 
 Was ist Filterung?
 
->Veränderung der relativen Amplituden einzelner Frequenzkomponenten in einem Signal (kap. 4.12)
+>Veränderung der relativen Amplituden einzelner Frequenzkomponenten in einem Signal (kap. 14.12)
 
 Welche Eigenschaften haben ideale frequenzselektive Filter im Zeitbereich?
 
 >Ideale Filter sind extrem scharf im Frequenzbereich lokalisiert.
 >Nach der Unschärferelation führt dies zu einer weiträumigen ”Verschmierung” im Zeitbereich. (kap. 14.17)
->- Nichtkausal<br>
->- Unendlich große Impulsantwort (Sinc-Funktion)<br>
->- Überschwingen<br>
->- Oszillierendes Einschwingen (kap. 14.18)<br>
+>
+> * Nichtkausal\
+> * Unendlich große Impulsantwort (Sinc-Funktion)\
+> * Überschwingen\
+> * Oszillierendes Einschwingen (kap. 14.18)\
 
 ## Faltung
 
 Wie funktioniert die Faltung, um das Ausgangssignal eines Systems zur Zeit t zu berechnen?
 
->kennt man die Antwort des Systems auf jeden zeitverschobenen Dirac-Impuls, so weiß man die Systemantwort auf jedes beliebige Signal. (kap. 13.29)
+>kennt man die Antwort des Systems auf jeden zeitverschobenen Dirac-Impuls, so weiß man die Systemantwort auf jedes beliebige Signal. (kap. 13.29)\
 >Impulsantwort (oder Sprungantwort mit anschließendem Differenzierer) * f(t) (kap. 14.4)
 
 Warum verwendet man meist nichtideale Filter mit welligen Durchlass- und Sperrbereichen und einem Übergangsbereich statt idealen frequenzselektiven Filtern?
@@ -514,7 +518,8 @@ Warum verwendet man meist nichtideale Filter mit welligen Durchlass- und Sperrbe
 
 Was ist das Faltungsintegral?
 
->Systemantwort ermittelt durch Integral über f(zeitverschoben t) * impulsantwort h(t - zeitverschoben t)
+>[Faltungsintegral](https://de.wikipedia.org/wiki/Faltung_(Mathematik)#Definition) ist die mathematische Vorschrift zur Berechnung der Faltung.\
+>![Faltungsintegral](https://wikimedia.org/api/rest_v1/media/math/render/svg/81df67282ca41c30ef718beec500c93eeeb86131 "https://de.wikipedia.org/wiki/Faltung_(Mathematik)#Definition")
 
 # Bildsignale
 
@@ -563,7 +568,7 @@ Wie funktioniert ein Nächste-Nachbar-Klassifikator?
 
 Wie wird die momentane Frequenz eines akustischen Eingangssignals in der Basilarmembran des Innenohrs codiert?
 
->Position der Membran bestimmt Tonhöhe, da die Basilarmembran konisch verläuft.<br>
+>Position der Membran bestimmt Tonhöhe, da die Basilarmembran konisch verläuft.\
 >Dünne stellen werden von hohen frequenzen angeregt, Breite stellen von hohen. (kap. 11.21)
 
 # Systeme
@@ -589,12 +594,12 @@ Was ist eine Schwebung?
 
 Wie beschreibt man mathematisch die Abtastung eines Signals g(t) zum Zeitpunkt t1?
 
->g(1) = Integral(g(t) * δ(t - 1))
+>`g(1) = Integral(g(t) * δ(t - 1))`
 
 Wie sieht das Spektrum einer mit Abtastintervall 1 abgetasteten Funktion mit Spektrum G(ω) aus?
 
->Das Spektrum ist periodisch<br>
->Wiederholt sich alle: 1/Abtastintervall
+>Das Spektrum ist periodisch\
+>Wiederholt sich alle ω<sub>s</sub> \= 2 * pi / Abtastintervall
 
 Wie verändert sich das Spektrum einer Kammfunktion, wenn man das Abtastintervall verdreifacht?
 
@@ -602,20 +607,20 @@ Wie verändert sich das Spektrum einer Kammfunktion, wenn man das Abtastinterval
 
 Unter welchen Bedingungen entsteht Aliasing?
 
->Wenn das Signal unterabgetastet wird. Das bedeutet konkret, wenn sich im Signal Frequenzen über der halben Abtastfrequenz (Nyquist-Frequenz) befinden
+>Wenn das Signal unterabgetastet (unter der Nyquist-Frequenz) wird. Das bedeutet konkret, wenn sich im Signal Frequenzen über der halben Abtastfrequenz (Nyquist-Frequenz) befinden
 
 Wie funktioniert das Sägezahnverfahren bei der A/D-Wandlung?
 
->1. Taktgeber<br>
->2. Sample-and-Hold<br>
->3. Sägezahn-Generator (synchronisiert mit Taktgeber)<br>
->4. Sägezahnspannung wird mit Sample-and-Hold verglichen => wie lang passt der Sägezahn in das S-a-H<br>
->5. Abzähle, wie viele Takte in die Vergleichsspannung aus 4. passen<br>
+>1. Taktgeber\
+>2. Sample-and-Hold\
+>3. Sägezahn-Generator (synchronisiert mit Taktgeber)\
+>4. Sägezahnspannung wird mit Sample-and-Hold verglichen => wie lang passt der Sägezahn in das S-a-H\
+>5. Abzähle, wie viele Takte in die Vergleichsspannung aus 4. passen\
 >\#Pulsweitenmodulation
 
 Welche scheinbare Frequenz hat ein Sinussignal der Frequenz f0, wobei f0 größer als die Nyquistfrequenz, aber kleiner als die Abtastfrequenz f1 ist?
 
->f1 - f0<br>
+>f1 - f0\
 >Die periodischen Spektren überlagern sich, dadurch erhält man verfälschte Frequenzen
 
 Was ist Aliasing?
@@ -624,25 +629,25 @@ Was ist Aliasing?
 
 Wie schafft man es, die Fouriertransformierte eines diskreten Signals im Computer zu berechnen, obwohl seine Fouriertransformierte kontinuierlich ist?
 
->Man setzt das Eingangssignal periodisch fort, wodurch die Fouriertransformierte ebenfalls diskret und periodisch wird.
+>Man setzt das diskrete Eingangssignal periodisch fort, wodurch die Fouriertransformierte ebenfalls diskret und periodisch wird.\
 >Da das Spektrum dann periodisch ist, ist nur eine der vielen Kopien das diskrete Spektrum des Signals (kap. 16.21)
 
 Ist die diskrete Fouriertransformation und die Fouriertransformation bei zeitdiskreten Signalen das Gleiche?
 
 >Nein. Die [Diskrete Fourier-Transformation (DFT)](https://de.wikipedia.org/wiki/Diskrete_Fourier-Transformation) geht implizit von einem periodischen Signal aus (periodische Fortsetzung).
->Das Spektrum wird dadurch diskret (und für einen Computer berechenbar). 
+>Das Spektrum wird dadurch diskret (und für einen Computer berechenbar).
 >Im gegensatz dazu geht die [Fouriertransformation für zeitdiskrete Signale (DTFT)](https://de.wikipedia.org/wiki/Fouriertransformation_f%C3%BCr_zeitdiskrete_Signale) von **unendlichen, zeitdiskreten Signalen** aus, was zu einem kontinuierlichen Spektrum führt
 >Kurz: Spektrum der DFT ist diskret, Spektrum der DTFT ist kontinuierlich.
 
 Was ist ein FIR-Filter?
 
->FIR steht für Finite Impulse Response (Endliche Impulsantwort)<br>
+>FIR steht für Finite Impulse Response (Endliche Impulsantwort)\
 >verwendet nur eine begrenzte Anzahl von Daten am Eingang zur Berechnung des Filterergebnisses. Bsp. Mittelwertbildung durch Summierung einzelner aufeinander folgender Werte [Quelle: Wikipedia](https://de.wikipedia.org/wiki/Filter_mit_endlicher_Impulsantwort) (kap. 17 ff)
 
 Was ist ein FFT-Filter?
 
->Signal wird über FFT in den Frequenzbereich transformiert (kap. 17.14)<br>
->Vom fouriertransformatierten Signal können bestimmte Frequenzen abgeschnitten werden.<br>
+>Signal wird über FFT in den Frequenzbereich transformiert (kap. 17.14)\
+>Vom fouriertransformatierten Signal können bestimmte Frequenzen abgeschnitten werden.\
 >Anschließend wird das Spektrum rücktransformiert und man erhält ein gefiltertes Signal.
 >
 >Allgemeines zu Filtern: 
@@ -651,54 +656,55 @@ Was ist ein FFT-Filter?
 
 Wieviele Fourierkoeffizienten hat die Fourierreihe eines diskreten Signals, das aus 8 Abtastpunkten besteht?
 
->8, von denen nur 4 relevant sind
+>8, von denen nur 4 relevant sind, wegen Nyquist-Frequenz.
 
 Warum braucht man bei diskreten periodischen Signalen nur endliche Fourierreihen zu ihrer Darstellung?
 
->Das diskrete Signal ist durch die Faltung mit der Kammfunktion entstanden. Dadurch ist das Spektrum ebenfalls periodisch, denn es gilt: (f * g)(x) => F(ω) x G(ω).<br>
+>Das diskrete Signal ist durch die Faltung mit der Kammfunktion entstanden. Dadurch ist das Spektrum ebenfalls periodisch, denn es gilt: (f * g)(x) => F(ω) x G(ω).\
 >Da das Spektrum dann periodisch ist und sich nach der Abtastfrequenz wiederholt, ist nur ein endlicher Ausschnitt notwendig.
 >Abtastfrequenz ist endlich => Spektrum ist auch endlich.
 
 Was sind die Unterschiede zwischen den Analysegleichungen der diskreten und kontinuierlichen Fourierreihe?
 
->Diskret: Aufsummierung
+>Diskret: Aufsummierung\
 >Kontinuierlich: Integral (kap. 16.18)
 
 Warum reicht bei diskreten linearen Systemen die Antwort auf einen Einheitsimpuls zum Zeitpunkt 0, um es vollständig zu charakterisieren?
 
->Da hk[n] eine um k zeitverschobene Version von h0[n] ist. Im diskreten Fall reicht die Angabe der Impulsantwort h[n] = h0[n], um die Systemantwort für jeden beliebigen Input zu charakterisieren (kap. 17.7)<br>
+>Da hk[n] eine um k zeitverschobene Version von h0[n] ist. Im diskreten Fall reicht die Angabe der Impulsantwort h[n] = h0[n], um die Systemantwort für jeden beliebigen Input zu charakterisieren (kap. 17.7)\
 >Ein lineares system faltet ein Signal. Wird der Einheitsimpuls mit einer unbekannten Funktion f(x) gefaltet, erhält man als Ergebnis wieder f(x):
 
 Wie berechnet man die Systemantwort eines diskreten linearen Systems?
 
 >Faltung mit dem Dirac-Impuls.
->Summe der zeitverschobenen Impulsantworten.<br>
->Faltung etwas anschaulicher: 
+>Summe der zeitverschobenen Impulsantworten.\
+>Faltung etwas anschaulicher:
+>
 >1. Fahre mit der Faltungsfunktion über die Funktion, als wäre sie ein Filter.
 >2. Berechne an jeder Stelle das gewichtete Mittel (wie beim 2D Filter).
 >3. Das Ergebnis ist die Faltung der beiden Funktionen
 >
->Beispiel Dirac:<br>
->"Filter" ist nur am "Hotspot" 1, sonst 0. Fährt man damit über eine Funktion f(x) so erhält man wieder f(x) => Der Dirac-Impuls ist das "neutrale Element" der Faltung. 
+>Beispiel Dirac:\
+>"Filter" ist nur am "Hotspot" 1, sonst 0. Fährt man damit über eine Funktion f(x) so erhält man wieder f(x) => Der Dirac-Impuls ist das "neutrale Element" der Faltung.
 
 Was ist der Hauptunterschied zwischen dem Spektrum eines aperiodischen kontinuierlichen Signals und dem eines aperiodischen diskreten Signals?
 
->aperiodisch kontinuierliches Signal => aperiodisch kontinuierliches Spektrum<br>
->aperiodisch diskretes Signal => periodisch kontinuierliches Spektrum => das wäre, als würde man ein kontinuierliches aperiodisches Signal mit der Kammfunktion falten. Dadurch entstünde auch ein periodisches Spektrum (da Spektrum der Kammfunktion ebenfalls eine Kammfunktion ist [periodisch]). Aufgrund der Aperiodizität ist das Signal endlich und besitzt deswegen ein kontinuierliches Spektrum, da sich unendlich hohe Frequenzen darin befinden müssen
+>aperiodisch kontinuierliches Signal => aperiodisch kontinuierliches Spektrum.\
+>aperiodisch diskretes Signal => periodisch kontinuierliches Spektrum => das wäre, als würde man ein kontinuierliches aperiodisches Signal mit der Kammfunktion falten. Dadurch entstünde auch ein periodisches Spektrum (da Spektrum der Kammfunktion ebenfalls eine Kammfunktion ist [periodisch]). Aufgrund der Aperiodizität ist das Signal endlich und besitzt deswegen ein kontinuierliches Spektrum, da sich unendlich hohe Frequenzen darin befinden müssen.
 
 Wie sieht ein idealer zeitdiskreter Tiefpass im Spektralraum aus?
 
->*Wie eine diskrete Rechteckschwingung.*
+>*Wie eine diskrete Rechteckschwingung.*\
 >![Spektren Zeitdiskreter Filter](./imgs/zeitdiskrete_filter_spektrum.PNG)
 
 Ein zeitdiskreter Filter besteht aus der Differenz des momentanen Inputwertes und des Inputwertes des vergangenen Zeitschritts. Um was für eine Art von Filter handelt es sich?
 
->Durchschnitt: Tiefpass.<br>
+>Durchschnitt: Tiefpass.\
 >Differenz: Hochpass.
 
 Ist eine zeitdiskrete Sinusschwingung immer periodisch?
 
-<!---
-FIXME: Ich glaube da sollten wir nochmal drüber nachdenken oder?
--->
->Nur, wenn die Periode ein ganzzahliges Vielfaches der Abtastzeit ist. (kap. 16.5)
+>Ja, irgendwann werden sie sich wiederholen.
+>oder eben nur, wenn die Periode ein ganzzahliges Vielfaches der Abtastzeit ist. (kap. 16.5)
+
+<!-- WOOOLOLOLOLOLOOOO -->
