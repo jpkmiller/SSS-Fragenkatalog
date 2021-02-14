@@ -577,8 +577,17 @@ Ein System liefert für eine Sinusschwingung als Eingangssignal eine doppelt so 
 Sinusschwingung gleicher Frequenz als Ausgangssignal, das um 10 ms verzögert ist. Um
 welche Art von System handelt es sich?
 
->Proportionalsystem mit Verzögerungsglied
+>Proportionalsystem mit Verzögerungsglied\
 >kausal
+
+Was für Typen von Systemen gibt es?
+> * Zeitinvariante/Stationäre Systeme: keine zeitliche Änderung.
+> * Eingrößensysteme: nur ein Eingangs- und Ausgangssignal.
+> * Kausale Systeme: Ausgangswert hängt vom Eingang und vergangenen Eingangswerten ab.
+> * Speicherfreie Systeme: Ausgangssignal hängt nur vom momentanen Eingangssignal ab.
+
+Wie unterscheidet sich ein lineares von einem nicht-linearen System?
+>![Lineares und nicht-lineares System](./imgs/linearNonLinear.jpeg)
 
 # Nicht kategorisiert
 
