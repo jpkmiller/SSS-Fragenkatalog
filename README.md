@@ -500,10 +500,10 @@ Welche Eigenschaften haben ideale frequenzselektive Filter im Zeitbereich?
 >Ideale Filter sind extrem scharf im Frequenzbereich lokalisiert.
 >Nach der Unschärferelation führt dies zu einer weiträumigen ”Verschmierung” im Zeitbereich. (kap. 14.17)
 >
-> * Nichtkausal\
-> * Unendlich große Impulsantwort (Sinc-Funktion)\
-> * Überschwingen\
-> * Oszillierendes Einschwingen (kap. 14.18)\
+> * Nichtkausal
+> * Unendlich große Impulsantwort (Sinc-Funktion)
+> * Überschwingen
+> * Oszillierendes Einschwingen (kap. 14.18)
 
 ## Faltung
 
@@ -611,11 +611,11 @@ Unter welchen Bedingungen entsteht Aliasing?
 
 Wie funktioniert das Sägezahnverfahren bei der A/D-Wandlung?
 
->1. Taktgeber\
->2. Sample-and-Hold\
->3. Sägezahn-Generator (synchronisiert mit Taktgeber)\
->4. Sägezahnspannung wird mit Sample-and-Hold verglichen => wie lang passt der Sägezahn in das S-a-H\
->5. Abzähle, wie viele Takte in die Vergleichsspannung aus 4. passen\
+>1. Taktgeber
+>2. Sample-and-Hold
+>3. Sägezahn-Generator (synchronisiert mit Taktgeber)
+>4. Sägezahnspannung wird mit Sample-and-Hold verglichen => wie lang passt der Sägezahn in das S-a-H
+>5. Abzähle, wie viele Takte in die Vergleichsspannung aus 4. passen
 >\#Pulsweitenmodulation
 
 Welche scheinbare Frequenz hat ein Sinussignal der Frequenz f0, wobei f0 größer als die Nyquistfrequenz, aber kleiner als die Abtastfrequenz f1 ist?
