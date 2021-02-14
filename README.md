@@ -184,7 +184,7 @@ Sie haben eine indirekt gemessene Größe A, die von mehreren Eingangsgrößen B
 
 Sie haben 20 Einzelmessungen mit einer Standardabweichung des Mittelwertes von s. Wie groß ist das Vertrauensintervall, in das der wahre Wert der Messgröße mit einer Wahrscheinlichkeit von 95,5 % fällt?
 
->+/- 2,09 \* Standardabweichung für den Mittelwert
+>+/- 2,09 \* Standardabweichung für den Mittelwert (kap. 04.10)
 
 Wie schätzt man den wahren Wert einer Messgröße, wenn mehrere fehlerbehaftete Messungen vorliegen?
 
