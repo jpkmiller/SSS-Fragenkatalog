@@ -365,14 +365,20 @@ Signals?
 Wie wirkt ein lineares System auf das Spektrum eines Signals?
 
 >Wird auf den Eingang (oder die Eingänge) eines Systems ein sinusförmiges Signal beliebiger Frequenz gegeben und erscheint am Ausgang lediglich ein sinusförmiges Signal genau dieser Frequenz, so ist der Prozess linear. (kap. 12.6) ->spektrum hat gleiche 1. harmonische? (kap. 12.6 ff)
+>
+>Ein lineares System faltet ein Signal im Ortsraum. Faltung im Ortsraum entspricht Multiplikation im Frequenzraum.
 
 Was passiert mit dem Spektrum eines Signals, wenn man es in zeitlicher Richtung verschiebt?
 
 >Die Amplituden bleiben gleich, die Phasen ändern sich linear mit der Frequenz.
+>
+>Es gilt der Verschiebungssatz: f(t-a) -> e<sup>-iωa</sup> \* F(ω) 
 
 Wie sieht das Spektrum eines Signals aus, das um den Faktor 2 im Zeitbereich gestreckt wird?
 
->Das Spektrum wird schmaler, da aufgrund der Zeit-Frequenz-Unschärferelation eine höhere Auflösung in der Frequenz gegeben ist
+>Das Spektrum wird schmaler, da aufgrund der Zeit-Frequenz-Unschärferelation eine höhere Auflösung in der Frequenz gegeben ist.
+>
+>Es gilt der Ähnlichkeitssatz: f(a*t) -> (1/|a|) * F(ω/a) 
 
 Was passiert mit dem Spektrum eines Signals, wenn man es mit einem konstanten Phasenfaktor mit dem Phasenwinkel a multipliziert?
 
@@ -389,16 +395,19 @@ Wie wirkt die Differentiation auf das Spektrum eines Signals?
 
 Was ist ein Bode-Diagramm?
 
->Darstellung des Frequenzgangs anhand H(ω) in abhängigkeit der Frequenz (logarithmiert)
+>Darstellung des Frequenzgangs H(ω) in abhängigkeit der Frequenz (logarithmiert)
 
 Ein Signal hat ein rein imaginäres Spektrum, das punktsymmetrisch zum Ursprung ist. Um welchen Signaltyp handelt es sich?
 
->Um ein reelles ungerades Signal. (?)
+>Um ein reelles ungerades Signal.
+>>- Ein reelles und gerades Signal hat eine rein reelle, gerade Fouriertransformierte.
+>>- **Ein reelles und ungerades Signal hat eine rein imaginäre, ungerade Fouriertransformierte.**
+
 
 Welche der folgenden Signale belegt das schmalste Frequenzband?
 * möglichst breite Rechteckfunktion
 * Gaußfunktion mit kleiner Standardabweichung
-* Gabor-Wavelet
+* **Gabor-Wavelet**
 
 >möglichst breite Rechteckfunktion.
 
@@ -440,6 +449,8 @@ Was ist die Ausblendeigenschaft des Dirac-Impulses?
 Wie sieht die Fouriertransformierte des mit 2 skalierten Einheitsimpulses aus?
 
 >konstant mit allen frequenzen (da Zeitauflösung maximal)
+>
+>F(ω) = 2 (alle Frequenzen mit Amplitude 2 vorhanden)
 
 ## Frequenz-Zeit-Unschärferelation
 
@@ -449,7 +460,7 @@ Wie berechnet man die Frequenzunschärfe eines Signals?
 
 Ein Signal hat eine Frequenzunschärfe von 0. Welche Zeitdauer hat dieses Signal?
 
->Unendlich (?)
+>Unendlich
 
 Was besagt die Frequenz-Zeit-Unschärferelation?
 
@@ -467,7 +478,9 @@ Bei welchem Signal ist das Produkt aus Zeit- und Frequenzunschärfe genau gleich
 
 Sie möchten die Frequenz eines Signals der Dauer 10s messen. Welche Aussage zur Messgenauigkeit ist richtig?
 
->Grundsätzlich gilt: Je länger gemessen wird, desto höher ist die Frequenzauflösung. Deshalb bringt eine Messdauer größer als 10s eine weitere Erhöhung der Messgenauigkeit
+>Achtung: übersteigt die Messdauer die Signaldauer, führt die längere
+  Messdauer zu keiner Verbesserung der Auflösung! Hier bestimmt
+  ausschließlich die Signaldauer die Frequenzauflösung (9.14)
 
 Sie haben zwei fastperiodische Signale: 500ms und 1s. Wie unterscheiden sich die Spektren beider Signale?
 
@@ -497,7 +510,7 @@ Wie funktioniert die Faltung, um das Ausgangssignal eines Systems zur Zeit t zu 
 
 Warum verwendet man meist nichtideale Filter mit welligen Durchlass- und Sperrbereichen und einem Übergangsbereich statt idealen frequenzselektiven Filtern?
 
->
+>Um der Zeitunschärfe idealer Filter (siehe oben) entgegenzuwirken.
 
 Was ist das Faltungsintegral?
 
@@ -523,6 +536,8 @@ Wie kann man am Besten die wechselnde Tonhöhe in der Aufnahme eines Solo-Musiks
 bestimmen?
 
 >Grundfrequenz(en)
+>
+>Kurzzeit-Fouriertransformation
 
 Wievielen Dezibel entspricht ein Verstärkungsfaktor von 100?
 
@@ -531,6 +546,8 @@ Wievielen Dezibel entspricht ein Verstärkungsfaktor von 100?
 Wie kann man einen Vokal in einem Sprachsignal erkennen?
 
 >Vokale sind fastperiodische Signalabschnitte in Sprachsignalen. (kap. 11.7)
+>
+>Linie im Sonogramm
 
 Was ist ein Phonem?
 
